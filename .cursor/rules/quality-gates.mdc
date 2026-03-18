@@ -1,0 +1,49 @@
+---
+description: Quality gates and testing requirements for Python code
+alwaysApply: true
+---
+
+# Quality Gates
+
+## Before Commit
+
+- [ ] Tests written and passing (pytest)
+- [ ] Code formatted correctly (4 spaces, ruff format)
+- [ ] No hardcoded configuration/secrets
+- [ ] Error handling for external calls (API, file I/O)
+- [ ] Logging for library code (not print)
+
+## Before Merge
+
+- [ ] All quality checks passing (ruff check, ruff format, pytest)
+- [ ] Test coverage maintained where applicable
+- [ ] Documentation updated for public APIs
+
+## Code Quality Metrics
+
+| Metric | Threshold |
+|--------|-----------|
+| Function length | ≤ 20 lines |
+| File size | ≤ 250 lines |
+| Cyclomatic complexity | ≤ 10 |
+| Test coverage | ≥ 80% (for critical paths) |
+
+## Testing Requirements
+
+- Write tests before implementation (TDD)
+- Unit tests for business logic
+- Test error paths, not just happy paths
+
+```python
+def test_valid_login():
+    user = User("test@example.com", "hashed_password")
+    with patch("user_repository.find_by_email", return_value=user):
+        result = user_service.login("test@example.com", "password")
+    assert result.is_success is True
+```
+
+## Security Checks
+
+- No hardcoded API keys, passwords, or tokens
+- Use environment variables for configuration
+- Validate all user inputs

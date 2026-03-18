@@ -1,0 +1,34 @@
+---
+description: Jupyter good practices — execution order, Colab vs local, common mistakes; points to full primer
+globs: "**/*.ipynb"
+alwaysApply: false
+---
+
+# Jupyter primer (notebooks)
+
+When working with `.ipynb` files, follow these practices. Full reference: [jupyter-primer/JUPYTER_PRIMER.md](jupyter-primer/JUPYTER_PRIMER.md).
+
+## Execution and state
+
+- **Run cells in order** — the kernel only has state from cells already run. Out-of-order execution causes `NameError` or wrong results.
+- **When in doubt:** use "Restart and run all" (Colab: Runtime → Restart and run all; Cursor: restart kernel then run from top).
+- **Hidden state** — notebooks are stateful; output is not always deterministic. Restart to get a clean slate.
+
+## Cells and structure
+
+- Use **code cells** for runnable Python; use **markdown cells** for headers, explanations, and lists so the notebook reads like a report.
+- Avoid one giant notebook; split by topic or use clear `##` headers.
+
+## Colab vs local
+
+- **Colab:** No local install; use `!pip install` in a cell (re-run each session). Store API keys in **Tools → Secrets** and access via `userdata.get('KEY')`. Enable GPU under Runtime → Change runtime type.
+- **Local (Cursor):** Select the project’s `.venv` as kernel (e.g. `jupyter-primer/.venv`); ensure `ipykernel` is installed in that env.
+
+## Common mistakes to avoid
+
+- Running cells out of order → restart and run all.
+- Assuming previous cells were run → check what’s actually executed.
+- Putting secrets in notebook code → use Colab Secrets or env vars.
+- Skipping markdown → add short explanations and structure.
+
+For shortcuts, magics (`%time`, `%debug`, `%%writefile`, etc.), and Colab steps, see the full primer doc.

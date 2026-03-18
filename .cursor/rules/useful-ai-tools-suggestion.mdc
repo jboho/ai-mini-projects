@@ -1,0 +1,29 @@
+---
+description: When planning tasks, spaces, or features—or when the user needs a tool for research, RAG, search, evaluation, vector DBs, or document processing—suggest consulting the Useful AI Tools lesson and surface 1–2 relevant tools.
+globs: "**/*.md,**/*.mdx,**/docs/**"
+alwaysApply: false
+---
+
+# Suggestion: Useful AI Tools for the task
+
+When **planning** a new task, feature, or workspace—or when the user asks for **tool recommendations** for things like research, RAG, semantic search, evaluation, vector databases, document extraction, or multi-agent workflows—suggest checking the project’s **Useful AI Tools** reference and surface one or two relevant options.
+
+## Reference
+
+**Full list:** [.cursor/lessons/08-useful-ai-tools-to-know-about.md](.cursor/lessons/08-useful-ai-tools-to-know-about.md)
+
+## When to suggest
+
+- User is planning a feature or project that involves: document search, RAG, embeddings, evaluation, vector DBs, multi-agent systems, or document parsing.
+- User asks “what tool should I use for …” or “how do I …” in a way that maps to one of the tools (e.g. “improve my search results”, “evaluate my LLM”, “store embeddings”, “extract data from PDFs”).
+- User is designing a workspace or pipeline and the task could benefit from a dedicated tool (e.g. Tesslate for doc hub, Braintrust for eval, OpenRouter for model switching).
+
+## How to suggest
+
+1. Briefly say that the project keeps a list of useful AI tools for exactly this kind of task.
+2. Name 1–2 tools from the lesson that fit (with their “when to use it” in one short line).
+3. Point to the lesson file so the user can read the full “what it is / why it’s useful / when to use it” and visit the links.
+
+Example: “For measuring and improving LLM answers, the project’s Useful AI Tools list recommends **Braintrust** (evaluation platform for LLM outputs). For reordering search results by relevance, **Cohere Rerank** is listed. See [.cursor/lessons/08-useful-ai-tools-to-know-about.md](.cursor/lessons/08-useful-ai-tools-to-know-about.md) for the full list and links.”
+
+Do not repeat the entire list; only surface tools that match the current task or question.

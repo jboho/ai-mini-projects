@@ -1,0 +1,56 @@
+---
+description: Steps and scripts to initialize a Python environment when starting or adding Python to a project
+globs: "**/*.py,**/requirements*.txt,**/environment.yml,**/pyproject.toml"
+alwaysApply: false
+---
+
+# Python environment setup (project initialization)
+
+Use this checklist when adding Python to a repo or starting a new Python project.
+
+## 1. Choose stack
+
+- **pyenv + venv**: General apps, APIs, scripts. Lightweight; use system/python.org or pyenv for the interpreter, then `venv` per project.
+- **Conda**: Data science, notebooks, ML, or when you need non-Pip dependencies. Use `conda create` / `conda activate` (or Miniconda/Anaconda).
+
+## 2. pyenv + venv (recommended for most projects)
+
+```bash
+# Ensure desired Python version is active (e.g. pyenv global 3.11.7)
+python3 --version
+cd /path/to/your/project
+
+# Create and activate venv (name .venv so it stays hidden)
+python3 -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+
+# Install deps (create requirements.txt if new project)
+pip install -r requirements.txt   # or: pip install <packages>
+pip freeze > requirements.txt      # after adding packages
+```
+
+- Add `.venv/` to `.gitignore`. Commit `requirements.txt`.
+
+## 3. Conda
+
+```bash
+cd /path/to/your/project
+conda create -n my-env python=3.10
+conda activate my-env
+# Prefer: conda install <pkg>. Use pip only when necessary.
+# Export: conda env export > environment.yml
+```
+
+- Add `environment.yml` to version control. Do not commit env dirs (e.g. `~/miniconda3/envs/` or project-specific conda env dirs if used).
+
+## 4. Cursor / VS Code
+
+- **Interpreter**: `Cmd+Shift+P` → "Python: Select Interpreter" → choose the project’s `.venv` or conda env so the terminal and run/debug use the same env.
+- **Confirm**: In terminal `which python` and in code `import sys; print(sys.executable)` should match.
+
+## 5. Optional project scripts
+
+- **Create env (venv)**: e.g. `scripts/setup-venv.sh` that runs `python3 -m venv .venv` and `pip install -r requirements.txt`.
+- **Create env (conda)**: e.g. `scripts/setup-conda.sh` that runs `conda env create -f environment.yml` (or `conda create` with a fixed Python version).
+
+When adding Python to an existing repo, create `.venv` (or conda env), add/update `requirements.txt` or `environment.yml`, update `.gitignore`, and select the interpreter in Cursor.

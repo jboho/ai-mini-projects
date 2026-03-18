@@ -1,0 +1,40 @@
+---
+description: When building or debugging RAG (retrieval-augmented generation)—apply the 6-step eval-centric approach: ingestion experiments, embedding variants, DB variants, synthetic Q&A, systematic evaluation, gap analysis loop.
+globs: "**/*.py,**/docs/**,.cursor/lessons/**,**/rag*/**"
+alwaysApply: false
+---
+
+# RAG debugging & evaluation-centric approach
+
+When working on **RAG pipelines** (parser → embeddings → vector DB → retrieval → LLM), apply this process. Full lesson: [.cursor/lessons/13-ai-debugging-eval-centric-rag.md](.cursor/lessons/13-ai-debugging-eval-centric-rag.md).
+
+---
+
+## Mindset
+
+- RAG is not “wire parser + embeddings + vector DB and ship.” The real work is **debugging and evaluation**: test configurations, measure tradeoffs, converge on faithful + useful setup.
+- **Structured logging is non-negotiable.** **Evaluation > features.** **Gap-closing** = narrow the delta between automatic evals and human judgment. Performance emerges from **iteration**, not one-time setup.
+
+---
+
+## Six steps (summary)
+
+1. **PDF ingestion experiments** — Try multiple parsers (PyPDF2, pdfplumber, PyMuPDF) and chunking strategies (fixed_size, sentence, semantic). **Log full config + stats** (total_chunks, avg chars/words per chunk, min/max, unique_pages, method, parser). Chunk stats reveal bias toward tiny fragments vs. oversized spans; both harm faithfulness.
+
+2. **Embedding variants** — Run ingestion with multiple backends (OpenAI text-embedding-3-*, SentenceTransformers MiniLM/InstructorXL, LiteLLM, optional domain models). **Log recall@k and MRR@k** per embedding + chunking config.
+
+3. **Database storage variants** — Store embeddings in multiple backends (Turbopuffer, FAISS, ChromaDB, etc.). Surfaces tradeoffs in latency, indexing, metadata filtering.
+
+4. **Synthetic dataset generation** — Generate Q&A pairs with **chunk IDs** (Instructor or custom prompts). Cover multiple question types per chunk (factoid, multi-hop, distractor, emotional). Balanced chunk coverage; include overlaps. Save as structured records: question, expected_answer, chunk_id, source_page.
+
+5. **Systematic evaluation** — Evaluate **all combinations** (parser × chunking × embedding × DB × reranking). Compute: Faithfulness, relevance, completeness, MRR, Recall@1/3/5, Precision@1/3/5, avg time. Use judgy, Braintrust. Run **human eval** on a sampled subset; compare to LLM scores for **gap analysis**.
+
+6. **Gap analysis & debugging loop** — Find where automatic evals diverge from human judgment (over-scoring, missed omissions). Adjust retrieval and evaluation prompts; re-run evals; iterate until faithfulness gap is minimized.
+
+---
+
+## End-to-end flow (mental model)
+
+PDF → Parser/Chunker → Embeddings → Vector DB → Query + Retrieval → LLM Generation → **Structured Logs** → **Evaluation** → **Human Evaluation** → **Gap Analysis** → **Prompt/Config Refinement** → (back to ingestion/embedding as needed).
+
+When suggesting or implementing RAG code, nudge toward: logging config + chunk stats, multi-config experiments, synthetic Q&A with chunk_id, eval metrics (faithfulness, MRR, recall@k), and a human-eval + gap-analysis loop. Point to the lesson for the full table, example stats, and JSON schema.
