@@ -1,0 +1,53 @@
+---
+description: Full debugging workflow (structured logging, LLM eval, human eval, gap analysis, refinement) and core tools for RAG/eval pipelines; use when building or debugging AI systems.
+globs: "**/*.py,**/docs/**,**/mini-exercises/**,.cursor/lessons/**"
+alwaysApply: false
+---
+
+# AI debugging workflow & tools
+
+When building or debugging **RAG pipelines, agents, fine-tuned models, or evaluation systems**, follow this workflow and consider these tools. Full reference: [.cursor/lessons/11-ai-debugging-and-evaluation-centric-approach.md](.cursor/lessons/11-ai-debugging-and-evaluation-centric-approach.md).
+
+---
+
+## Debugging workflow (5 steps)
+
+1. **Structured logging first**  
+   Capture inputs, retrievals, generations, outputs (JSON or log DB). Attach chunk IDs and metadata (embedding model, top-k, reranker scores). Use **logfire** + **Rich** for visibility. Label synthetic data with predefined metrics used in the LLM-as-judge prompt.
+
+2. **LLM-based evaluation**  
+   Run LLM-as-Judge (e.g. **judgy**) for: **Faithfulness** (grounded in sources), **Relevance** (aligned with query), **Completeness**. Store eval outputs with generations.
+
+3. **Human evaluation**  
+   **Never look at LLM-as-Judge results before labeling yourself.** Sample queries/generations; humans annotate correctness, faithfulness, usefulness. Compare to LLM evals to find gaps.
+
+4. **Gap analysis**  
+   Find where LLM evals diverge: overly generous scoring, missed reasoning errors, penalizing style vs. facts.
+
+5. **Prompt refinement & iteration**  
+   Adjust retrieval queries, judge criteria, system prompts. Re-run evals and check whether the LLM–human gap narrows.
+
+---
+
+## Evaluation strategy
+
+- **LLM evals** → fast, cheap, scalable (daily regressions).
+- **Human evals** → slow, expensive, high-quality (calibration).
+- **Combined:** LLM judges for continuous monitoring; periodic human audits; iterate until both converge.
+
+---
+
+## Core tools (summary)
+
+- Structured Q&A / chunk IDs → Instructor
+- Generations → OpenRouter, LiteLLM
+- Trace LLM gens → logfire
+- Embeddings → OpenAI, SentenceTransformers, Instructor
+- Vector DB → Turbopuffer
+- Reranking → Cohere Reranker
+- Evaluate / benchmark → Braintrust
+- LLM-as-Judge → judgy
+- Validate outputs → Pydantic
+- Console logs → Rich
+
+Full tool list and workflow: [.cursor/lessons/11-ai-debugging-and-evaluation-centric-approach.md](.cursor/lessons/11-ai-debugging-and-evaluation-centric-approach.md)

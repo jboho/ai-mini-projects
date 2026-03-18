@@ -1,0 +1,20 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets
+.env
+.env.local
+
+# .cursor: only commands/ and rules/ tracked
+.cursor/docs/
+.cursor/lessons/
+.cursor/plans/
+.cursor/preflight.json
+.cursor/notes/
+.cursor/memory-bank/
+.cursor/summaries/

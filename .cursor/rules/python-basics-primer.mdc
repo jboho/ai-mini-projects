@@ -1,0 +1,45 @@
+---
+description: Python basics style guide and learning primer — readability, types, control flow, common mistakes
+globs: "**/*.py"
+alwaysApply: false
+---
+
+# Python basics (primer / style guide)
+
+When helping with Python in this repo, reinforce these basics. Full reference: [python-primer/PRIMER.md](python-primer/PRIMER.md).
+
+Before writing new code, search for existing patterns (data generators, evaluators, API clients). See [codebase-conformance-python.mdc](.cursor/rules/codebase-conformance-python.mdc).
+
+## Philosophy
+
+- **Readable and minimal** — indentation defines blocks (4 spaces); no curly braces. Zen: `import this`.
+- **Everything is an object** — variables are untyped; use `type(x)` to check.
+
+## Core types and syntax
+
+- **Types:** `int`, `float`, `str`, `bool`, `list`, `dict`. Use `:` after `if`, `for`, `def`, etc.
+- **Comparison:** `==` for equality, `=` for assignment — don’t mix them.
+- **Indexing:** Check bounds; “index out of range” is a common error.
+
+## Control flow and functions
+
+- **If/elif/else** and **for**/ **while** — one block per branch; keep conditions clear.
+- **Functions:** `def name(args):` with a docstring; use `return` for values; prefer small, single-purpose functions.
+
+## Common mistakes to avoid
+
+| Mistake | Fix |
+|--------|-----|
+| Forgetting `:` after `if`/`for`/`def` | Always add `:` |
+| Inconsistent indentation | Use 4 spaces |
+| Using `=` instead of `==` in conditions | `==` for comparison |
+| Assuming list index exists | Check length or use safe access |
+| Bare `except:` | Use `except ValueError:` or specific type |
+| `print()` in library code | Use `logging` |
+| Env vars without validation | Validate and raise clear error if missing |
+
+## Type hints
+
+Encourage for public functions: `def foo(x: str) -> list[dict[str, Any]]`. See [python-style.mdc](.cursor/rules/python-style.mdc).
+
+When suggesting code, keep it Pythonic: clear names, minimal logic, and aligned with the examples in `python-primer/PRIMER.md` and `python-primer/practice.py`.
