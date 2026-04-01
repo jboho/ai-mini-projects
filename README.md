@@ -1,6 +1,6 @@
 # ai-mini-projects
 
-Standalone mini-projects extracted from ai-bootcamp. **`main` carries the shared scaffolding plus integrated code under `mini-projects/` for projects 01–04.** Per-project branches (below) are where isolated development happens.
+Standalone mini-projects. **`main` carries the shared scaffolding plus integrated code under `mini-projects/` for projects 01–04.** Per-project branches (below) are where isolated development happens.
 
 **All project branches are works in progress.** Expect incomplete features, shifting APIs, and plan/docs that may run ahead of implementation. Prefer `main` for a single checkout that includes the merged mini-projects; use a branch when you want to work on one project’s line without mixing others.
 

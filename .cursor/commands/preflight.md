@@ -8,7 +8,7 @@
 
 Run ALL checks and provide a complete report at the end, regardless of individual failures.
 
-**For this repo (ai-bootcamp):** Use `.cursor/preflight.json`: lint (ruff check), format (ruff format --check), test (pytest). Ruff preferred; fall back to flake8/black if ruff not installed.
+**For this repo (ai-mini-projects):** Use `.cursor/preflight.json`: lint (ruff check), format (ruff format --check), test (pytest). Ruff preferred; fall back to flake8/black if ruff not installed.
 
 ---
 

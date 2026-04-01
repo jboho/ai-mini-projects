@@ -1,12 +1,12 @@
 # adapt-domain
 
-Adapt a bootcamp mini project to a new domain. The AI will prompt you for each missing piece before proceeding.
+Adapt a mini project to a new domain. The AI will prompt you for each missing piece before proceeding.
 
 ---
 
 ## Mission Briefing: Domain Adaptation Protocol
 
-You will help the user adapt a bootcamp mini project to a different domain while preserving all technical requirements and success criteria.
+You will help the user adapt a mini project to a different domain while preserving all technical requirements and success criteria.
 
 **Before doing anything else**, prompt the user for each of the following. Collect all values before proceeding:
 
@@ -24,7 +24,7 @@ Ask for these one at a time or in a single message. If the user provides some va
 Assemble and execute this request:
 
 ```
-I have a bootcamp mini project about [original topic].
+I have a mini project about [original topic].
 I want to adapt it to [chosen domain].
 
 Here are the requirements I MUST keep (do not change any of these):

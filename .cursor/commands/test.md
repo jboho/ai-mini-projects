@@ -8,7 +8,7 @@
 
 Collaborative dialogue to design tests BEFORE implementation. Tests are a specification.
 
-**For this repo (ai-bootcamp):** Python/pytest; use existing patterns in `mini-exercises/`. Run with `pytest` (per exercise or project root). See `.cursor/rules/quality-gates.mdc` and `codebase-conformance-python.mdc`.
+**For this repo (ai-mini-projects):** Python/pytest; use existing patterns under `mini-projects/`. Run with `pytest` (per project or repo root). See `.cursor/rules/quality-gates.mdc` and `codebase-conformance-python.mdc`.
 
 ---
 

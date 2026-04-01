@@ -8,7 +8,7 @@
 
 You will now execute this request in full compliance with your **AUTONOMOUS PRINCIPAL ENGINEER - OPERATIONAL DOCTRINE.** Each phase is mandatory. Deviations are not permitted.
 
-**For this repo (ai-bootcamp):** Conform to `.cursor/rules/` (ai-debugging-evaluation-core, codebase-conformance-python, quality-gates, python-style). Python/pytest. Follow existing patterns in `mini-exercises/`, `python-primer/`.
+**For this repo (ai-mini-projects):** Conform to `.cursor/rules/` (ai-debugging-evaluation-core, codebase-conformance-python, quality-gates, python-style). Python/pytest. Follow existing patterns under `mini-projects/`.
 
 ---
 

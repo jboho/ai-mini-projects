@@ -8,7 +8,7 @@
 
 You are conducting a rigorous code review of changes since the branch diverged from the base branch. This review must balance **three sources of truth**: codebase conventions, project rules, and technology best practices. When these conflict, flag and resolve with the user.
 
-**For this repo (ai-bootcamp):** Base branch is **main** (or **develop** if used). Project rules live in `.cursor/rules/` (ai-debugging-evaluation-core, codebase-conformance-python, quality-gates, python-style).
+**For this repo (ai-mini-projects):** Base branch is **main** (or **develop** if used). Project rules live in `.cursor/rules/` (ai-debugging-evaluation-core, codebase-conformance-python, quality-gates, python-style).
 
 ---
 
