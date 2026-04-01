@@ -1,0 +1,6 @@
+instructor
+openai
+python-dotenv
+matplotlib
+seaborn
+pandas
