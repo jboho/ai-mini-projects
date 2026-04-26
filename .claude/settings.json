@@ -2,5 +2,29 @@
   "attribution": {
     "commit": "",
     "pr": ""
+  },
+  "permissions": {
+    "allow": [
+      "Bash(ruff check:*)",
+      "Bash(ruff format:*)",
+      "Bash(pytest:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "filePattern": "**/.env*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'BLOCKED: Do not edit .env files directly.' && exit 1"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -479,3 +479,116 @@ When reviewing code (your own or others'), verify:
 - ❌ Validation allows range X but downstream clamps to Y → ✅ Align validation max with clamp max, or surface clamping to user
 
 <!-- ai-dev-toolkit:rules-end -->
+
+# Python Style
+
+- **Formatting:** 4 spaces, 88-100 col line length (Ruff default; `pyproject.toml` sets `line-length = 100`)
+- **Import order:** stdlib → third-party → local (enforced by `ruff`)
+- **Naming:** `snake_case` functions/variables, `PascalCase` classes, `UPPER_SNAKE` constants
+- **Docstrings:** Google or NumPy style for public APIs; one-liner for simple internal functions
+- **Type hints:** Required on all public function signatures: `def foo(x: str) -> list[dict[str, Any]]`
+- **Error handling:** `except SpecificError:` always — never bare `except:` or `except Exception:`
+- **Logging:** Use the `logging` module in pipeline/library code — never `print()` for debug output
+- **Testing:** pytest; `tests/` directory; `test_` prefix on all test functions
+
+### Python Anti-Patterns
+
+| Anti-pattern | Correct |
+|---|---|
+| `print("debug:", value)` in pipeline code | `logger.debug("value: %s", value)` |
+| `except:` or `except Exception:` | `except SpecificError as e:` |
+| `json_str = '{"key": "' + val + '"}'` | `json.dumps({"key": val})` |
+| `API_KEY = "sk-..."` hardcoded | `os.environ["API_KEY"]` or `load_dotenv()` |
+| Config scattered across files | Centralized `config.py` or `.env` + `load_dotenv()` |
+
+# Python Codebase Conformance
+
+Before writing any new code, search for 2-3 existing examples in the codebase and conform to them.
+
+### Key Search Targets for This Repo
+
+| Pattern | Where to Look |
+|---|---|
+| Data generators | `mini-projects/01-synthetic-data-pipeline/pipeline/` |
+| Evaluators / judges | `mini-projects/03-rag-evaluation-pipeline/pipeline/` |
+| OpenAI API client setup | Search for `client = OpenAI()` |
+| Env/config loading | Search for `load_dotenv()` and `os.environ` |
+| Logging configuration | Search for `logging.getLogger` |
+
+### Post-Write Checklist
+
+- [ ] `logging` not `print()` for debug/info output
+- [ ] API keys loaded from env vars (never hardcoded)
+- [ ] Specific exception types in all `except` clauses
+- [ ] Type hints on all public function signatures
+- [ ] `json.dumps()` / `json.loads()` — not manual string building
+- [ ] No unused imports
+
+### Review Checklist
+
+1. **Pattern conformance** — does this code match how similar code works elsewhere in the repo?
+2. **Completeness** — are ALL error paths handled, not just the happy path?
+3. **Architectural fit** — is this module necessary, or does existing pipeline infra already handle it?
+4. **Security posture** — does failure default to closed/safe (no data leak, no silent skip)?
+
+# Quality Gates
+
+### Before Commit
+
+- [ ] Tests written and passing: `pytest`
+- [ ] Linting clean: `ruff check .`
+- [ ] Format clean: `ruff format --check .`
+- [ ] No hardcoded secrets or API keys
+- [ ] Error handling on all external calls (API, file I/O, network)
+- [ ] `logging` not `print()` throughout
+
+### Before Merge
+
+- [ ] All above checks passing
+- [ ] Coverage maintained (≥ 80% for critical pipeline paths)
+- [ ] Public API docstrings updated
+
+### Code Quality Metrics
+
+| Metric | Threshold |
+|---|---|
+| Function length | ≤ 20 lines |
+| File size | ≤ 250 lines |
+| Cyclomatic complexity | ≤ 10 |
+| Test coverage (critical paths) | ≥ 80% |
+
+# AI/ML Evaluation-First Approach
+
+**Mindset:** Evaluation is first-class, not a final step. Debugging = "Trace → Measure → Close the gap." Do not only build features — analyze performance of each component before moving on.
+
+### For Any AI Pipeline (RAG, Agents, Fine-Tuned Models)
+
+- Use **structured logging** before scaling up: capture inputs, retrievals, generations, outputs; include chunk IDs and metadata
+- Run **LLM-as-Judge + human eval** cycle — always complete human eval BEFORE reading LLM scores to avoid anchoring bias
+- Perform **gap analysis** between LLM eval scores and human judgment; iterate prompts/config until scores converge
+- Preferred tool stack: logfire (tracing), judgy (LLM-as-Judge), Braintrust (eval platform), Pydantic (output validation), Instructor (structured output), OpenRouter/LiteLLM (multi-provider), Cohere Reranker, Turbopuffer
+
+### RAG Specifics (6-Step Process)
+
+1. **PDF ingestion experiments** — try multiple parsers (PyPDF2, pdfplumber, PyMuPDF) × chunking strategies (fixed_size, sentence, semantic); log: total_chunks, avg chars/words, min/max, unique_pages, method, parser
+2. **Embedding variants** — OpenAI text-embedding-3-*, SentenceTransformers MiniLM/InstructorXL; log Recall@k and MRR@k per config
+3. **DB variants** — Turbopuffer, FAISS, ChromaDB; surfaces latency and indexing tradeoffs
+4. **Synthetic Q&A generation** — include chunk IDs; cover factoid, multi-hop, distractor, edge-case question types; balanced chunk coverage; save as: question, expected_answer, chunk_id, source_page
+5. **Grid search evaluation** — all combinations (parser × chunking × embedding × DB × reranking); compute Faithfulness, Relevance, Completeness, MRR, Recall@1/3/5, Precision@1/3/5, avg latency
+6. **Gap analysis loop** — find divergence between auto evals and human judgment; adjust prompts; re-run; iterate until faithfulness gap closes
+
+### Fine-Tuning Specifics
+
+- **Never remove stop words** for Transformer fine-tuning (BERT/GPT/T5 learned to use them; removing causes distribution shift and degraded performance)
+- **Never remove tokens before tokenization** for token-level tasks (NER, POS — breaks label-to-token alignment)
+- **Workflow:** baseline (raw text, default hparams) → Optuna HPO (20-50 trials, save `best_hparams.json`) → final training with `EarlyStoppingCallback` (patience 3-5, `num_train_epochs=1000`, `load_best_model_at_end=True`, `evaluation_strategy="epoch"`)
+
+# Jupyter Notebooks
+
+- **Run cells in order.** Kernel state is cumulative from cells already executed; out-of-order execution causes `NameError` or silently wrong results
+- **When in doubt:** restart and run all (Colab: Runtime → Restart and run all; Local: Kernel → Restart Kernel and Run All Cells)
+- **Cell types:** code cells for runnable Python; markdown cells for headers and explanations — don't skip structure
+- **Never put secrets in notebook code.** Colab: use Tools → Secrets (`userdata.get('KEY')`). Local: load from `.env` via `load_dotenv()`
+- **Colab setup:** `!pip install` in a cell; GPU via Runtime → Change runtime type
+- **Local setup:** select project `.venv` as kernel; verify ipykernel is installed in that env: `pip install ipykernel`
+- **Common mistakes:** running cells out-of-order, assuming prior cells ran after kernel restart, skipping markdown structure, hardcoding API keys

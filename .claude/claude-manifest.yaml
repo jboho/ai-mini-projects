@@ -53,9 +53,9 @@ rules:
 skills:
   - planning-workflow
   - verification-protocol
-  # - systematic-debugging
+  - systematic-debugging
   # - feature-brainstorming
-  # - test-driven-development
+  - test-driven-development
   # - code-review-response
   # - retrospective-analysis
 
@@ -70,7 +70,7 @@ hooks:
   - no-attribution           # Suppress Co-Authored-By trailer on commits/PRs
   # - prettier-on-save
   # - lockfile-protect
-  # - env-protect
+  - env-protect
 
 templates:
   # - pr-description
