@@ -1,0 +1,86 @@
+# ai-dev-toolkit manifest for Claude Code
+# This file declares which toolkit assets to sync to this repository.
+#
+# Usage:
+#   1. Copy this file to .claude/claude-manifest.yaml
+#   2. Uncomment/add the rules, skills, agents, hooks you need
+#   3. Run: ~/Code/ai-dev-toolkit/platforms/claude/sync-to-repo.sh .
+#
+# Rule categories: meta, frontend, backend, ui, testing, frameworks
+# See ~/Code/ai-dev-toolkit/manifest.yaml for the full inventory.
+
+toolkit_version: "1.0.1"
+last_synced: "2026-04-26"
+
+rules:
+  # Meta rules (inline in CLAUDE.md — recommended for all projects)
+  - meta/operating-doctrine
+  - meta/no-sycophancy
+  - meta/minimal-comments
+  - meta/no-attribution
+  - meta/codebase-conformance
+
+  # Frontend (uncomment what applies)
+  # - frontend/react-best-practices
+  # - frontend/typescript-patterns
+  # - frontend/component-structure
+  # - frontend/javascript-architecture
+  # - frontend/style-architecture
+  # - frontend/component-authoring-ve
+
+  # Backend (uncomment what applies)
+  # - backend/java-conventions
+  # - backend/node-api-patterns
+  # - backend/lambda-patterns
+  # - backend/php-patterns
+  # - backend/brightspot-viewmodels
+  # - backend/java-api-patterns
+
+  # UI (uncomment what applies)
+  # - ui/shadcn-tailwind
+  # - ui/accessibility-wcag
+  # - ui/vanilla-extract
+  # - ui/theming-vanilla-extract
+
+  # Testing (uncomment what applies)
+  # - testing/vitest-patterns
+  # - testing/cypress-e2e
+
+  # Frameworks (uncomment what applies)
+  # - frameworks/nextjs-app-router
+  # - frameworks/nextjs-patterns
+
+skills:
+  - planning-workflow
+  - verification-protocol
+  # - systematic-debugging
+  # - feature-brainstorming
+  # - test-driven-development
+  # - code-review-response
+  # - retrospective-analysis
+
+agents:
+  - verifier
+  # - security-auditor
+  # - test-runner
+  # - doc-generator
+  # - refactoring-assistant
+
+hooks:
+  - no-attribution           # Suppress Co-Authored-By trailer on commits/PRs
+  # - prettier-on-save
+  # - lockfile-protect
+  # - env-protect
+
+templates:
+  # - pr-description
+  # - feature-spec
+  # - implementation-plan
+  # - release-notes
+  # - changelog
+  # - contributing
+  # - readme
+  # - adr
+  # - github-pr-template
+  # - github-issue-bug
+  # - github-issue-feature
