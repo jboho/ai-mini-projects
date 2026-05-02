@@ -12,6 +12,9 @@ __pycache__/
 .env
 .env.local
 
+# Personal Claude Code notes (keep edits here; CLAUDE.md is from the repo)
+CLAUDE.local.md
+
 # .cursor: only commands/ and rules/ tracked
 .cursor/docs/
 .cursor/lessons/
