@@ -1,0 +1,25 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.benchmarks/
+
+# Secrets
+.env
+.env.local
+
+# Personal Claude Code notes (keep edits here; CLAUDE.md is from the repo)
+CLAUDE.local.md
+
+# .cursor: only commands/ and rules/ tracked
+.cursor/docs/
+.cursor/lessons/
+.cursor/plans/
+.cursor/preflight.json
+.cursor/notes/
+.cursor/memory-bank/
+.cursor/summaries/
