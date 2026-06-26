@@ -1,0 +1,48 @@
+{
+  "dimensions": [
+    {
+      "dimension": "data_quality",
+      "score": 66.66666666666667,
+      "details": {
+        "completeness": 100.0,
+        "duplicate_rate": 0.0752
+      }
+    },
+    {
+      "dimension": "diversity",
+      "score": 76.5942556104247,
+      "details": {
+        "unique_tokens": 199,
+        "category_evenness": 98.2,
+        "label_balance": 0.473
+      }
+    },
+    {
+      "dimension": "bias",
+      "score": 93.51319773971288,
+      "details": {
+        "gender_balance": 98.3,
+        "category_label_corr": 87.5
+      }
+    },
+    {
+      "dimension": "linguistic",
+      "score": 89.98944214488766,
+      "details": {
+        "mean_words_per_text": 16.3,
+        "within_text_repetition": 0.094
+      }
+    },
+    {
+      "dimension": "real_life_matching",
+      "score": 100.0,
+      "details": {
+        "pair_type_coverage": 9,
+        "multi_fraction": 0.111
+      }
+    }
+  ],
+  "overall_score": 85.3527124323384,
+  "passed": true,
+  "threshold": 60.0
+}

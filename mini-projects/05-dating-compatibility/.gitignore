@@ -1,0 +1,12 @@
+# Regenerable dataset (scripts/generate_data.py) and large model artifacts
+data/*.jsonl
+data/*_metadata.json
+models/finetuned-minilm/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Note: reports/*.json and visuals/*.png are tracked so the dashboard/README
+# ship with real numbers.

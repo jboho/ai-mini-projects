@@ -1,0 +1,63 @@
+{
+  "margin": 0.9897374510765076,
+  "effect_size": 11.986576406657107,
+  "false_positive_rate": 0.010296010296010296,
+  "cluster_purity": 0.9839533187454412,
+  "accuracy": 0.9945541184479237,
+  "precision": 0.9885714285714285,
+  "recall": 1.0,
+  "f1": 0.9942528735632183,
+  "auc_roc": 1.0,
+  "per_category": {
+    "dealbreakers": {
+      "margin": 1.01932692527771,
+      "effect_size": 72.55609159460562,
+      "false_positive_rate": 0.0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_roc": 1.0
+    },
+    "interests": {
+      "margin": 0.9830701351165771,
+      "effect_size": 143.24668037581765,
+      "false_positive_rate": 0.0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_roc": 1.0
+    },
+    "lifestyle": {
+      "margin": 1.0123611688613892,
+      "effect_size": 107.86168615099625,
+      "false_positive_rate": 0.0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_roc": 1.0
+    },
+    "multi": {
+      "margin": 0.9102726578712463,
+      "effect_size": 4.679262753068398,
+      "false_positive_rate": 0.06451612903225806,
+      "accuracy": 0.950920245398773,
+      "precision": 0.8297872340425532,
+      "recall": 1.0,
+      "f1": 0.9069767441860465,
+      "auc_roc": 1.0
+    },
+    "values": {
+      "margin": 1.004801869392395,
+      "effect_size": 101.67313017526159,
+      "false_positive_rate": 0.0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_roc": 1.0
+    }
+  }
+}
