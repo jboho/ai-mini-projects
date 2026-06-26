@@ -1,0 +1,48 @@
+---
+description: When fine-tuning Transformers or designing eval-centric training—apply first principles (no stop-word removal for Transformers), checklist, and workflow (baseline → Optuna → early stopping); consider ablation.
+globs: "**/*.py,**/docs/**,.cursor/lessons/**"
+alwaysApply: false
+---
+
+# Fine-tuning & eval-centric considerations (overall approach)
+
+When **fine-tuning pre-trained Transformers** or designing **eval-centric training** in this project, apply these considerations. Full guide: [.cursor/lessons/12-ai-debugging-eval-centric-finetuning.md](.cursor/lessons/12-ai-debugging-eval-centric-finetuning.md).
+
+---
+
+## First principles (concise)
+
+- **Context matters:** Stop words carry syntactic/grammatical signal; pre-trained models learned to use them. Removing them causes distribution shift.
+- **Model type:** Dense contextual models (BERT/GPT/T5) expect **raw text** — do not remove stop words. Sparse models (TF-IDF, BM25) can benefit from stop-word filtering (validate).
+- **Token-level tasks (NER/POS):** Never remove tokens before tokenization; it breaks alignment.
+- **Length limits:** Prefer sliding windows, sentence scoring, or extractive summarization instead of stripping stop words to fit token limits.
+- **Empiricism:** Always run a small ablation (baseline vs filtered) on the dev set.
+
+---
+
+## Quick checklist (before removing stop words)
+
+- Fine-tuning a **pre-trained Transformer?** → **Do not remove stop words.**
+- **Token-level labeling (NER)?** → **Never remove.**
+- **TF-IDF or BM25?** → Consider removing (but validate).
+- **Sequence-length constraints?** → Use sliding windows / extractive filters, not stop-word stripping.
+- **Always:** baseline + ablation.
+
+---
+
+## Recommended workflow (experiment plan)
+
+1. **Baseline:** Fine-tune with default hyperparams on **raw text**. Record metric.
+2. **Optuna HPO:** Run hyperparameter search (e.g. 20–50 trials), **save best_hparams.json**.
+3. **Final training:** Reload best params; train with **EarlyStoppingCallback** (patience 3 or 5) and **num_train_epochs=1000**; **load_best_model_at_end=True**. Compare final metric, epochs to stop, time.
+4. **(Optional)** Ablation: compare baseline vs stop-word-removed pipeline; persist **best_hparams.json** and logs/Optuna DB for reproducibility.
+
+---
+
+## Code-level reminders
+
+- Keep **full sentences** in the tokenizer for Transformer fine-tuning (no stop-word removal in the input pipeline).
+- Use **evaluation_strategy="epoch"** (or steps) so early stopping can monitor the metric.
+- **num_train_epochs=1000** is a safe cap when using early stopping; the callback halts when improvement plateaus.
+
+When suggesting or editing fine-tuning code, nudge toward: no stop-word removal for Transformers, Optuna for HPO, saving best params, and early stopping with a large epoch cap. Point to the lesson for full code patterns and Optuna + Trainer integration.

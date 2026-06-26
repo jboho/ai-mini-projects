@@ -1,0 +1,19 @@
+sample_size: 3000
+min_review_length: 30
+similarity_threshold: 0.75
+gap_priority_threshold: 0.6
+max_themes: 10
+model_name: gpt-4o-mini
+embedding_model: text-embedding-3-small
+priority_weights:
+  pain: 0.35
+  frequency: 0.25
+  coverage: 0.25
+  sentiment: 0.15
+product_areas:
+  - performance
+  - usability
+  - reliability
+  - customer_support
+  - pricing
+  - features

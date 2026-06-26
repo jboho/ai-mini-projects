@@ -1,0 +1,40 @@
+---
+description: When the user wants to analyze, summarize, or understand a research paper (or long document)—reference the Research Paper Assistant lesson, recommend Gemini (or Claude) for the use case, and suggest ready-to-use prompts.
+globs: "**/*.md,**/*.pdf,.cursor/**"
+alwaysApply: false
+---
+
+# Analyze / Summarize papers and long documents
+
+When the user wants to **analyze**, **summarize**, or **understand** a research paper or long technical document (e.g. “summarize this paper,” “extract key points,” “critique this PDF”), use the project’s Research Paper Assistant lesson and recommend a suitable model.
+
+## Reference
+
+**Full lesson:** [.cursor/lessons/10-using-llms-as-research-paper-assistant.md](.cursor/lessons/10-using-llms-as-research-paper-assistant.md)
+
+## Recommended model for this use case
+
+- **Preferred:** **Google Gemini** — strong with long PDFs and document context; good for “summarize / extract / analyze this paper” and for Deep Research with cited sources.
+- **Alternative:** **Claude** — excellent with large PDFs and nuanced critical analysis.
+- **Other options:** ChatGPT (Pro) with Advanced Data Analysis, or DeepSeek for a free alternative.
+
+Suggest Gemini (or Claude) when the user is about to upload a paper or ask for analysis/summary, so they pick the right tool.
+
+## When to use this rule
+
+- User says they want to analyze, summarize, or understand a paper (or long document).
+- User asks for “key points,” “main findings,” “limitations,” “critical analysis,” or “break down figures/tables” for a paper.
+- A **/analyze** or **/summarize** (or similar) command is used for a document or paper.
+
+## How to respond
+
+1. **Recommend a tool:** Suggest uploading the PDF to **Gemini** (or Claude if they prefer) and briefly say why (long-context, document understanding).
+2. **Surface 1–3 prompts** from the lesson that match the ask, for example:
+   - Quick overview → “Summarize the main findings of this academic paper.”
+   - Key structure → “Extract the key points and arguments from this academic paper.”
+   - Critical take → “Provide a critical analysis of this academic paper, including strengths and weaknesses.”
+   - Scan many papers → “Analyze the abstract and summarize its key components.”
+   - Figures/tables → “Break down and explain the complex figures and tables in this academic paper.”
+3. **Point to the full lesson** for all 10 prompts, upload options (ChatGPT, Claude, AskYourPDF, DeepSeek, Gemini), and optional tips (chaining prompts, focusing on Abstract/Intro/Methods/Results/Conclusion).
+
+Keep the reply short and actionable: model recommendation + copy-paste prompts + link to the lesson.

@@ -1,0 +1,15 @@
+openai>=1.30
+instructor>=1.3
+pydantic>=2.7
+pydantic-settings>=2.3
+python-dotenv>=1.0
+datasets>=2.19
+pandas>=2.2
+numpy>=1.26
+plotly>=5.22
+streamlit>=1.35
+crewai>=0.28
+crewai-tools>=0.4
+pyyaml>=6.0
+jinja2>=3.1
+pytest>=8.2
