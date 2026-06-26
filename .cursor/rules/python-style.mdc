@@ -1,0 +1,54 @@
+---
+description: Python style guide — formatting, naming, docstrings, type hints, testing
+globs: "**/*.py"
+alwaysApply: false
+---
+
+# Python Style Guide
+
+Extends [python-basics-primer.mdc](.cursor/rules/python-basics-primer.mdc). Follow when writing or reviewing Python.
+
+## Formatting
+
+- 4 spaces for indentation
+- Max line length 88–100 (Black default)
+- Use Ruff for lint and format when available
+
+## Imports
+
+- Order: stdlib → third-party → local
+- Use `from typing import` for type hints
+
+## Naming
+
+- `snake_case` for functions and variables
+- `PascalCase` for classes
+- `UPPER_SNAKE` for module-level constants
+
+## Docstrings
+
+- Google or NumPy style for public APIs
+- One-liner for simple functions
+- Comments explain WHY, not WHAT (see minimal-comments rule)
+
+## Error handling
+
+- `except SpecificError:` — never bare `except`
+- Use `logging` not `print` in library code
+
+## Type hints
+
+- Encourage for function signatures
+- `Optional[T]`, `list[dict[str, Any]]` for complex types
+
+## Testing
+
+- pytest; co-locate or `tests/` directory
+- `test_` prefix for test functions
+
+## Anti-patterns
+
+| Anti-pattern | Correct |
+|--------------|---------|
+| Manual JSON string building | `json.dumps()` |
+| Env without validation | Validated config with clear errors |

@@ -1,0 +1,23 @@
+---
+description: Core mindset for AI work in this project—debugging-first, evaluation-centric; treat evaluation as first-class; trace, measure, close the gap.
+globs: 
+alwaysApply: true
+---
+
+# AI debugging & evaluation–centric approach (core)
+
+In this project, **always** apply a **debugging-first** and **evaluation-centric** approach when working on AI systems (RAG, agents, fine-tuned models, pipelines).
+
+## Mindset
+
+- **Do not only build features.** Analyze how well each component performs, trace errors systematically, and close the gap between LLM-based evaluations and human judgment.
+- **Treat evaluation as a first-class citizen**, not a final step.
+- **Debugging =** "Trace everything → Measure everything → Close the gap."
+
+## In practice
+
+- Prefer **structured logging** (inputs, retrievals, generations, outputs; chunk IDs and metadata) before scaling up.
+- Prefer **LLM-as-Judge + human evaluation** and **gap analysis** between them, then **prompt refinement** and re-evaluation.
+- When suggesting or implementing AI pipelines, nudge toward: logging/tracing (e.g. logfire), evaluation (e.g. Braintrust, judgy), validation (e.g. Pydantic), and human calibration.
+
+**Full workflow and tools:** [.cursor/lessons/11-ai-debugging-and-evaluation-centric-approach.md](.cursor/lessons/11-ai-debugging-and-evaluation-centric-approach.md)
