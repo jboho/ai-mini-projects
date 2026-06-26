@@ -1,46 +1,64 @@
-# ai-mini-projects
+# AI Mini-Projects
 
-Standalone mini-projects. **`main` carries the shared scaffolding plus integrated code under `mini-projects/` for projects 01–04.** Per-project branches (below) are where isolated development happens.
+A series of applied AI engineering projects, each demonstrating a different technique or system pattern. Projects progress from structured data generation pipelines through RAG evaluation, embedding fine-tuning, and multi-agent systems.
 
-**All project branches are works in progress.** Expect incomplete features, shifting APIs, and plan/docs that may run ahead of implementation. Prefer `main` for a single checkout that includes the merged mini-projects; use a branch when you want to work on one project’s line without mixing others.
+## Projects
 
-## Branch layout
+| # | Project | What it does | PR |
+|---|---------|--------------|-----|
+| 01 | [Synthetic Data Pipeline](mini-projects/01-synthetic-data-pipeline) | Generate-evaluate-correct loop for synthetic Q&A; 93% failure rate reduction | [PR #1](../../pull/1) |
+| 02 | [Resume-Job Pipeline](mini-projects/02-resume-job-pipeline) | Schema-enforced resume/job pair generation with 6 failure metrics and LLM judge | [PR #2](../../pull/2) |
+| 03 | [RAG Evaluation Pipeline](mini-projects/03-rag-evaluation-pipeline) | Grid search over 24 RAG configurations; best MRR 0.917 with semantic chunking + BM25 | [PR #3](../../pull/3) |
+| 04 | [RAG PDF QA System](mini-projects/04-rag-pdf-qasystem) | Production RAG on Vectara benchmark (1,000 papers, 3,045 QA pairs); MRR 0.769 | [PR #4](../../pull/4) |
+| 05 | [Dating Compatibility](mini-projects/05-dating-compatibility) | Embedding fine-tuning pipeline; FPR 0.595→0.010 (-98%), Cohen's d 1.79→11.99 | [PR #5](../../pull/5) |
+| 06 | [Digital Clone](mini-projects/06-digital-clone) | 5-agent CrewAI system replicating email writing style with RAG and calendar fallback | [PR #6](../../pull/6) |
+| 07 | [Customer Feedback Agents](mini-projects/07-customer-feedback-agents) | 4-agent pipeline for gap analysis from 3,000+ reviews across Amazon, Yelp, App Store | [PR #7](../../pull/7) |
+| 08 | [Jira Copilot](mini-projects/08-jira-copilot) | Multi-agent Jira assistant; hybrid search, 33 API endpoints, 96 tests passing | [PR #8](../../pull/8) |
+| 09 | [Issue Triage Assistant](mini-projects/09-issue-triage-assistant) | Automated bug triage with layered classification, FSM approval workflow (WIP) | [PR #9](../../pull/9) |
 
-| Branch | Focus |
-|--------|--------|
-| **main** | Shared `.cursor/` commands and rules, repo config, and **merged** `mini-projects/01`–`04` (integration branch). |
-| **01-synthetic-data-pipeline** | DIY Repair synthetic data pipeline (WIP) |
-| **02-resume-job-pipeline** | Resume–job synthetic data pipeline and API (WIP) |
-| **03-rag-evaluation-pipeline** | RAG evaluation pipeline (WIP) |
-| **04-rag-pdf-qasystem** | RAG over PDFs / Q&A system (WIP) |
-| **05-dating-compatibility** | Dating compatibility (WIP) |
-| **06-digital-clone** | Digital clone (WIP) |
-| **07-customer-feedback-agents** | Customer feedback agents (WIP) |
-| **08-jira-copilot** | Jira copilot (WIP) |
-| **09-issue-triage-assistant** | Issue triage assistant (WIP) |
+## Recurring Patterns
 
-Branches **05–09** are early or planning-stage; treat them as especially fluid.
+Patterns that emerged and were reused across projects:
 
-## Usage
+**Data & Generation**
+- Instructor + Pydantic for guaranteed schema-compliant LLM outputs on every call
+- Generate-evaluate-correct loops: LLM-as-Judge failure signal drives targeted prompt corrections
+- Independent failure mode scoring (6 specific types) over aggregate quality labels
 
-```bash
-# Work from integrated tree on main
-git checkout main
-cd mini-projects/02-resume-job-pipeline
-pip install -r requirements.txt
-cp .env.example .env
-# Edit .env with API keys
-python run_pipeline.py --mode all
+**Retrieval**
+- Hybrid retrieval (BM25 + vector) consistently outperforms either alone across Projects 03 and 04
+- Chunking strategy matters more than embedding model size for retrieval quality
+- BM25 is a strong baseline on terminology-heavy text — don't assume embeddings are always better
+
+**Agents & Systems**
+- CrewAI agents as thin wrappers over deterministic service functions — logic stays in services for testability
+- Two-layer architecture (`core/` pure computation, `agents/` LLM calls) enables offline unit tests without mocking
+- Simulation-first writes (dry-run → audit trail → explicit execute) for any system that modifies shared state
+
+**Evaluation**
+- Multi-metric statistical evaluation (Cohen's d, FPR, cluster purity) over accuracy alone
+- Per-config QA ground truth for fair RAG evaluation — shared datasets across chunking configs introduce bias
+- LLM-as-judge for quality, but with awareness of self-evaluation bias; third-party validation where possible
+- Embedding and result caching by content hash to enable rapid iteration without re-running expensive steps
+
+## Structure
+
+```
+mini-projects/
+├── _shared/                    # Shared dashboard utilities
+├── 01-synthetic-data-pipeline/
+├── 02-resume-job-pipeline/
+├── 03-rag-evaluation-pipeline/
+├── 04-rag-pdf-qasystem/
+├── 05-dating-compatibility/
+├── 06-digital-clone/
+├── 07-customer-feedback-agents/
+├── 08-jira-copilot/
+└── 09-issue-triage-assistant/
 ```
 
-Or focus on one project line:
+Each project is self-contained with its own `requirements.txt`, `README.md`, and test suite.
 
-```bash
-git checkout 02-resume-job-pipeline
-cd mini-projects/02-resume-job-pipeline
-# same install/run steps as above
-```
+## Quick Start
 
-## Source control
-
-Only `.cursor/commands/` and `.cursor/rules/` are tracked under `.cursor/`. `.cursor/docs/`, `.cursor/lessons/`, `.cursor/plans/`, and `.cursor/preflight.json` are gitignored.
+Each project directory contains a `README.md` with setup and run instructions. Most projects require `OPENAI_API_KEY` set in a `.env` file copied from `.env.example`. All test suites run offline with stub LLMs — no API key needed to run tests.
