@@ -1,0 +1,15 @@
+# Secrets
+.env
+
+# Cached data + artifacts (regenerable via run_clone.py --mode learn)
+data/emails/*
+data/models/*
+data/rag/*
+data/evaluations/*
+data/fallback_logs/*
+!data/**/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/

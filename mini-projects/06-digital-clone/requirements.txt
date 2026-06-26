@@ -1,0 +1,13 @@
+crewai>=0.86
+crewai-tools>=0.17
+faiss-cpu>=1.9
+sentence-transformers>=3.3
+datasets>=3.2
+pydantic>=2.7
+numpy>=1.26
+langchain-text-splitters>=0.3
+openai>=1.30
+python-dotenv>=1.0
+textblob>=0.18
+rich>=13.7
+pytest>=8.0
