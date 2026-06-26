@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is the primary objective of adapting 3D Gaussian Splatting for MRI scans in the study by Park et al.?",
+    "relevant_chunk_ids": [
+      "c5f15c2c-cdd7-4f55-8956-3f0b1dfb3ca2"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "Why is the reconstruction of MRI acquired in standard clinical practice more complex regarding voxel dimensions and slice spacing compared to CT scans?",
+    "relevant_chunk_ids": [
+      "a3fd268f-c5a2-4691-8532-a770a95c7fbb"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "Why is the transition from ultrasound volumetric reconstruction to MRI reconstruction considered non-trivial when using 3D Gaussian Splatting?",
+    "relevant_chunk_ids": [
+      "8ac85c95-c187-452c-99c1-cfe39b7eaf4a"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What is the source of the anonymised MR scans used in the dataset?",
+    "relevant_chunk_ids": [
+      "e40984eb-2eb2-47f9-93fb-c0043ea96ba3"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What are the grading categories used to assess the severity of stenosis conditions in the Lumbar Spine Degenerative Classification AI Challenge dataset?",
+    "relevant_chunk_ids": [
+      "04d34717-f6b5-4284-ba6f-fd0a352a46b8"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What parameters are used to aggregate 3D Gaussians to form a 3D reconstruction and sample 2D views from it?",
+    "relevant_chunk_ids": [
+      "cc21b78c-21d2-4cb1-b555-d62febfb6521"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What is the purpose of adding a small background alpha term (\u03b1_BG) when computing the colour of a pixel?",
+    "relevant_chunk_ids": [
+      "5cd5ee61-8e3d-413d-b6cf-f85af5daf5f8"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "How did the authors optimize the initialization of Gaussian means to improve efficiency and reduce the initialization volume?",
+    "relevant_chunk_ids": [
+      "fb6b3e20-55fd-4cfd-8ba0-3f562be211b6"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Why was PSNR excluded from the loss function mixture used for optimizing the Gaussians' parameters?",
+    "relevant_chunk_ids": [
+      "a85861da-ad72-4c6e-bdf1-c355c0de392c"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "What are the initial color and alpha values used for the 100,000 Gaussians during initialization?",
+    "relevant_chunk_ids": [
+      "49edbe94-b209-4204-b59e-8315032b6cab"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 8
+    }
+  },
+  {
+    "question": "What method was used to detect each L5-S1 intervertebral disc (IVD) ROI?",
+    "relevant_chunk_ids": [
+      "0f4d0ef7-8576-4acb-a527-103aa8b0d9a2"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 9
+    }
+  },
+  {
+    "question": "What specific network architecture and aggregation method are used in the grading model to predict condition severity?",
+    "relevant_chunk_ids": [
+      "90dae1c4-f9f6-474f-9822-3a0088cc545f"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 10
+    }
+  },
+  {
+    "question": "What are the two stages involved in the Voxel Interpolation (VI) process for making anisotropic scans isotropic and obtaining resampled intensities?",
+    "relevant_chunk_ids": [
+      "ed42c3ac-26c5-493b-a9ab-b93917a87bf6"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 11
+    }
+  },
+  {
+    "question": "How does the stenosis degree classification performance of Gaussian-Resampled images compare to images resampled using Voxel Interpolation?",
+    "relevant_chunk_ids": [
+      "4b0465a6-1f96-454b-8ae5-2a96105dc1f8"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 12
+    }
+  },
+  {
+    "question": "Why is the Gaussian Splatting (GS) method considered simpler and more reliable than Voxel Interpolation (VI) for reconstructing MR volumes?",
+    "relevant_chunk_ids": [
+      "540f42e1-9c96-443b-a4ed-e217927f521d"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 14
+    }
+  },
+  {
+    "question": "How does the use of 3D Gaussian Splatting to render novel views of MRI affect automated grading performance compared to anatomically non-aligned MR acquisitions?",
+    "relevant_chunk_ids": [
+      "cf9b462e-54ad-4a50-ab12-551898f69746"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 15
+    }
+  },
+  {
+    "question": "Which paper provides a survey on 3D Gaussian Splatting as a new era, published in IEEE Transactions on Visualization and Computer Graphics in August 2025?",
+    "relevant_chunk_ids": [
+      "831139d1-a377-4159-a17a-bea97e3fcdf2"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 16
+    }
+  },
+  {
+    "question": "What is the purpose of the 'Deepspine' system described in the 2018 MLHC publication?",
+    "relevant_chunk_ids": [
+      "2d5e659a-0bc6-4f17-a9b8-95a980ded1b5"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 17
+    }
+  },
+  {
+    "question": "What is the name of the lumbar degenerative imaging spine classification dataset described by T. J. Richards and colleagues?",
+    "relevant_chunk_ids": [
+      "c63a2cd2-58de-4c81-bc64-7de3e220525d"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 17
+    }
+  },
+  {
+    "question": "Which paper provides an overview of current artificial intelligence methods for the classification and segmentation of lumbar spinal stenosis?",
+    "relevant_chunk_ids": [
+      "92eaaed9-5249-46bc-82b5-7482a059db83"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 18
+    }
+  }
+]

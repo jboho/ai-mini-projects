@@ -1,0 +1,142 @@
+[
+  {
+    "question": "What are the four points on the scale typically used to grade lumbar foraminal stenosis?",
+    "relevant_chunk_ids": [
+      "b571bf09-f2a1-4801-a7f4-5704499d3ca4"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "Why is acquiring anatomically aligned MRI typically more time-consuming than a single whole spine acquisition?",
+    "relevant_chunk_ids": [
+      "38457cb1-4d8f-4efc-9aff-154c4153e7c6"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "Which specific lumbar disc was focused on in the study, and why was it selected?",
+    "relevant_chunk_ids": [
+      "6fafdb4f-06a6-4406-a935-54ee87e6517a"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What percentage of all neural foraminal stenosis occurs at the L5-S1 lumbar disc?",
+    "relevant_chunk_ids": [
+      "e09c30e2-b8d7-43ce-a0a1-26f91875c115"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "How does the 3D reconstruction method described differ from traditional Gaussian Splatting for projection-based imaging in terms of how Gaussians are handled and what they can reconstruct?",
+    "relevant_chunk_ids": [
+      "628ef99b-d6bb-452e-b32b-4a2f528112ac"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "How does the two-stage CUDA process improve the speed of forming 3D volumetric reconstructions?",
+    "relevant_chunk_ids": [
+      "27b2652e-0606-49dc-ba27-77db8e5d986e"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What is the specific loss function used to learn and optimize the Gaussians' parameters, and why was this balance chosen over using PSNR and LPIPS?",
+    "relevant_chunk_ids": [
+      "1e6fb1eb-54a4-4ba4-8b07-21db3e4034b6"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "What is the architecture of the grading model used to predict the severity of stenosis conditions?",
+    "relevant_chunk_ids": [
+      "5bbc6c52-0a4d-4cb2-a519-0d0228ff2e7e"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 9
+    }
+  },
+  {
+    "question": "Why was AUROC used instead of threshold-dependent metrics such as F1 or balanced accuracy to measure grading performance?",
+    "relevant_chunk_ids": [
+      "3029f523-1ce7-49aa-bef2-c3080eee9aab"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 10
+    }
+  },
+  {
+    "question": "How does the grading performance of images resampled using Gaussian Splatting compare to those resampled using Voxel Interpolation across all combinations of training data and conditions?",
+    "relevant_chunk_ids": [
+      "5d79a280-dd08-49c1-9c22-d20b7fd329ca"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 12
+    }
+  },
+  {
+    "question": "Why is the Gaussian Splatting method considered simpler and more reliable than Voxel Interpolation for reconstructing MRI volumes?",
+    "relevant_chunk_ids": [
+      "dfc8fd8c-ed6b-4b6b-aa1d-150c3ff0d256"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 14
+    }
+  },
+  {
+    "question": "Who are the authors of the 2025 survey paper titled '3D Gaussian Splatting as a New Era' published in IEEE Transactions on Visualization and Computer Graphics?",
+    "relevant_chunk_ids": [
+      "8388bfe7-87c1-4283-bf6b-bc089ccc27ac"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 16
+    }
+  },
+  {
+    "question": "What is the focus of the 2018 MLHC paper titled 'Deepspine' by J.-T. Lu and colleagues?",
+    "relevant_chunk_ids": [
+      "77a52902-2446-4cad-a789-51317797bf9f"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 17
+    }
+  },
+  {
+    "question": "Which study provides an overview of current artificial intelligence methods for segmentation and classification in lumbar spinal stenosis?",
+    "relevant_chunk_ids": [
+      "0ec52b5c-bfcc-4dec-ae55-13966c2cfc26"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 18
+    }
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What method is used to form a volumetric reconstruction from sparse anisotropic MRIs to improve radiological gradings of spines?",
+    "relevant_chunk_ids": [
+      "586456a6-854c-4538-8d39-a485a052fad3"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What are the typical grades used on the four-point scale for lumbar foraminal stenosis?",
+    "relevant_chunk_ids": [
+      "0e50ef6f-f834-4a6a-997b-5dd92998c98d"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "Why are axial scans often obtained as a single parallel acquisition despite the curvature of the lumbar spine?",
+    "relevant_chunk_ids": [
+      "b2b8af62-88fc-4bb2-aa00-d90d5834f2a3"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "How does 3D Gaussian Splatting differ from implicit neural radiance fields (NeRFs) in terms of its representation and rendering process?",
+    "relevant_chunk_ids": [
+      "880bf186-7438-4b2a-9d89-1b97c5f13d23"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What are the limitations of the DeepSPINE system for producing stenosis grades from T2w axial scans?",
+    "relevant_chunk_ids": [
+      "3077bae0-4b53-4aed-a100-9cc9f89e1ce9"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What indicates severe left neural foraminal stenosis in the axial MRI slice at L5-S1?",
+    "relevant_chunk_ids": [
+      "c8058cf4-a9fb-4eef-98d0-03af32a8a207"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What parameters are learned for each 3D Gaussian used to form the 3D reconstruction and sample 2D views?",
+    "relevant_chunk_ids": [
+      "8d8b7e8a-26c4-4e39-a0f7-dbbd9488d6d0"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Why is a small background alpha term added when calculating pixel color in this system?",
+    "relevant_chunk_ids": [
+      "b2cab154-3413-442c-b5ea-b6ab8ffdbf24"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "How does the two-stage CUDA process optimize the speed of 3D volumetric reconstructions?",
+    "relevant_chunk_ids": [
+      "f718dd56-5455-4af4-9282-581e3f1e6675"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "What is the specific loss function used to optimize the Gaussians' parameters for 3D reconstruction?",
+    "relevant_chunk_ids": [
+      "036b4b8f-84a1-4ed2-99fd-b5e2ab411b14"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "What method does Voxel Interpolation (VI) use for resampling in the context of reconstruction?",
+    "relevant_chunk_ids": [
+      "c100f309-98ad-4e2b-96a3-cf35041bac61"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 9
+    }
+  },
+  {
+    "question": "How are the train and validation sets created to ensure no patient overlap and a proportional label distribution?",
+    "relevant_chunk_ids": [
+      "7b0cf71b-b8f6-49da-99b9-225ca8c99f5a"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 10
+    }
+  },
+  {
+    "question": "Which image quality metrics are used to measure pixel-level and structural fidelity?",
+    "relevant_chunk_ids": [
+      "c64cc63a-2c23-4962-8e9e-abab277d0147"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 10
+    }
+  },
+  {
+    "question": "How does the grading performance of images resampled using Gaussian Splatting (Test-R-GS) compare to those resampled using Voxel Interpolation (Test-R-VI) in terms of stenosis degree classification?",
+    "relevant_chunk_ids": [
+      "19f40d40-b2de-44dc-a3be-2695cda45310"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 12
+    }
+  },
+  {
+    "question": "How do Gaussian Splatting (GS) resampled scans compare to Voxel Interpolation (VI) resampled scans in terms of performance across grading scenarios?",
+    "relevant_chunk_ids": [
+      "212d3b9a-b68d-404d-8d6e-450d8b910a5c"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 14
+    }
+  },
+  {
+    "question": "Which funding bodies provided support for the research presented by R. Park and M. Eid?",
+    "relevant_chunk_ids": [
+      "5f113aec-d413-4a96-a929-062c01daa90a"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 15
+    }
+  },
+  {
+    "question": "Who are the authors of the 2025 survey paper titled '3D Gaussian Splatting as a New Era' published in IEEE Transactions on Visualization and Computer Graphics?",
+    "relevant_chunk_ids": [
+      "fd489e9b-1a8b-43ba-b8b4-f41422540bdf"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 16
+    }
+  },
+  {
+    "question": "Which publication discusses the use of generative adversarial networks to translate computed tomography images into T2-weighted magnetic resonance images of the lumbar spine?",
+    "relevant_chunk_ids": [
+      "09720e9c-a906-4872-9bf9-4b0a4f8130c0"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 16
+    }
+  },
+  {
+    "question": "Which study compared the diagnostic value of spinal ultrasound to MRI for diagnosing spinal anomalies in pediatrics?",
+    "relevant_chunk_ids": [
+      "a3d2c9b5-62e5-4413-9265-0d60db6c6afa"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 17
+    }
+  },
+  {
+    "question": "Which study provides an overview of current artificial intelligence methods for segmentation and classification in lumbar spinal stenosis?",
+    "relevant_chunk_ids": [
+      "84add00c-a30b-4011-a87d-5d1f2f31f480"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 18
+    }
+  }
+]

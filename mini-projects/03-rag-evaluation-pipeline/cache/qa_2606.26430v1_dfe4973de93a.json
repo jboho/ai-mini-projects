@@ -1,0 +1,162 @@
+[
+  {
+    "question": "What is the purpose of the AI-integrated Design of Experiment (DoE) framework proposed in the CoWoS packaging case study?",
+    "relevant_chunk_ids": [
+      "44488229-e637-4bf8-ac71-9e682eaa88fc"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What factors lead to X-ray compatibility issues in advanced package inspection?",
+    "relevant_chunk_ids": [
+      "04583609-5804-4543-b193-2c5b34e65a5b"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What is the purpose of the X-ray compatibility metric (CM X-ray) and how is it created?",
+    "relevant_chunk_ids": [
+      "68796f00-dc0b-4e87-b405-700aa00d9ea0"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What is the purpose of using Design Rule Checking (DRC) in integrated circuit and package design?",
+    "relevant_chunk_ids": [
+      "c681c357-b1a2-45b5-b857-f75b684e22b1"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What are the main elements included in design guidelines for X-ray compatibility?",
+    "relevant_chunk_ids": [
+      "8d404d23-4e50-4728-af8e-1f64af863249"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What machine learning techniques are used during data analysis and AI integration to build predictive models from the collected data?",
+    "relevant_chunk_ids": [
+      "e0a4aea1-c20d-443d-8801-72939d881b83"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What is the minimum required TSV pitch (P) to ensure clear detection and separation in an X-ray imaging system with resolution R?",
+    "relevant_chunk_ids": [
+      "753a0ddd-61a4-43f3-b0f7-2cb820424b43"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What are the recommended spacing threshold values for bump pitch, bump to RDL spacing, and RDL to RDL spacing in CoWoS packaging technology relative to resolution R?",
+    "relevant_chunk_ids": [
+      "f1517964-3ab4-48dd-81a2-c9ab2722f1ad"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What is the minimum required spacing between the RDL and Through-Silicon Vias (TSV) to avoid imaging artifacts around vias?",
+    "relevant_chunk_ids": [
+      "896f353c-245f-4f62-8412-8bdf092ff010"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What is the constant value for the die thickness in the case study design parameters?",
+    "relevant_chunk_ids": [
+      "60da06d7-3fe3-4ef3-baa0-a073b77ce406"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What is the source-sample distance used in the X-ray imaging setup for the simulation?",
+    "relevant_chunk_ids": [
+      "755ab4fb-1c01-4aec-8d84-545ed95a2f96"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Why was a random forest (RF) AI-based classifier selected for the feature importance analysis in the case study?",
+    "relevant_chunk_ids": [
+      "fabec275-a249-48d8-bc36-1aae97a5c947"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "According to the random forest model analysis, which feature is the most significant in determining X-ray compatibility?",
+    "relevant_chunk_ids": [
+      "91c5ca1d-604d-4e5b-aa9b-199aad0d8b34"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What are the top four factors that influence X-ray compatibility and inspection accuracy in the manufacturing of advanced packages, ranked by their importance?",
+    "relevant_chunk_ids": [
+      "e67bc802-5832-4e1f-81f6-5b8f67791776"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What is the purpose of the CMx-ray metric described by M. S. M. Khan and colleagues in the 2023 IEEE Physical Assurance and Inspection of Electronics (PAINE) conference?",
+    "relevant_chunk_ids": [
+      "a0cc6dad-da45-426b-96fa-2ab3c2dafa3a"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "Which paper discusses the use of LLMs to develop a vulnerable hardware database for empowering hardware security?",
+    "relevant_chunk_ids": [
+      "55069c78-02c3-4677-9710-9cbdde2e40b8"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 7
+    }
+  }
+]

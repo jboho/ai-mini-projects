@@ -1,0 +1,10 @@
+instructor
+openai
+python-dotenv
+matplotlib
+seaborn
+pandas
+
+# Dashboard (streamlit run dashboard.py)
+streamlit>=1.35
+altair>=5.0
