@@ -1,0 +1,6 @@
+# Embedding cache is large + regenerable; keep it out (keep the placeholder).
+cache/*
+!cache/.gitkeep
+
+# Note: data/pdf/*.pdf and results/*.json are tracked on purpose so a `git clean`
+# can't wipe them and the dashboard ships with populated results.
