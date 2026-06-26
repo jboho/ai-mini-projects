@@ -1,0 +1,21 @@
+{
+  "description": "Retrieval eval set over the synthetic TAWOS sample (6 issues). Each query maps to the issue key(s) a user would expect at the top. Replace/extend when running against the full TAWOS dataset.",
+  "queries": [
+    {"query": "application crashes when starting up", "relevant": ["APACHE-1"]},
+    {"query": "null pointer exception when config is missing", "relevant": ["APACHE-1"]},
+    {"query": "crash bug on launch", "relevant": ["APACHE-1"]},
+    {"query": "dashboard is slow to load", "relevant": ["APACHE-2"]},
+    {"query": "slow database query performance", "relevant": ["APACHE-2"]},
+    {"query": "page takes ten seconds to render", "relevant": ["APACHE-2"]},
+    {"query": "oauth login support", "relevant": ["APACHE-3"]},
+    {"query": "single sign on with google and github", "relevant": ["APACHE-3"]},
+    {"query": "user authentication", "relevant": ["APACHE-3"]},
+    {"query": "update the api documentation", "relevant": ["APACHE-4"]},
+    {"query": "document the new endpoints", "relevant": ["APACHE-4"]},
+    {"query": "data loss when syncing", "relevant": ["APACHE-5"]},
+    {"query": "cart not syncing across devices", "relevant": ["APACHE-5"]},
+    {"query": "sync data integrity problem", "relevant": ["APACHE-5"]},
+    {"query": "dark mode theme for the interface", "relevant": ["APACHE-6"]},
+    {"query": "add a dark theme to the ui", "relevant": ["APACHE-6"]}
+  ]
+}
