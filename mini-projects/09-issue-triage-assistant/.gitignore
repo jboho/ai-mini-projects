@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Data: SQLite DB + downloaded CSVs (regenerable / huge)
+data/*
+!data/.gitkeep
+*.db
+
+# Generated charts
+visuals/*
+!visuals/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
