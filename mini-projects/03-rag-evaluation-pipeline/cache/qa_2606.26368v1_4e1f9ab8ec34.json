@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the purpose of the SWITCH specification for Media over QUIC (MoQ) Transport?",
+    "relevant_chunk_ids": [
+      "0675e08b-d5ad-49a2-bf14-619ac29b0e7c"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "How do the MOQT Streaming Format (MSF) and CMAF compliant MOQT Streaming Format (CMSF) map video components such as frames and Groups of Pictures (GOP) to MOQT structures?",
+    "relevant_chunk_ids": [
+      "c6fc6087-24ed-451c-8f9a-0472301708c1"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What is the primary disadvantage of using a naive approach of issuing a SUBSCRIBE message for a new Track and an UNSUBSCRIBE message for an old one during a representation change?",
+    "relevant_chunk_ids": [
+      "73055e2e-072a-4e97-b5c8-1bc8395b4c58"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What are the target bitrates for the five-rung HEVC ladder used in the video sequence encoding of the evaluation?",
+    "relevant_chunk_ids": [
+      "27093d49-8352-4d9f-9791-76a24d225f13"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What are the target bitrates used for the five-rung HEVC ladder encoding of the Tears of Steel video segments?",
+    "relevant_chunk_ids": [
+      "62530008-1b14-4a7c-82ee-692483916d2c"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What are the characteristics of the 'Step' bandwidth profile used in the evaluation?",
+    "relevant_chunk_ids": [
+      "dfead35d-7fec-4000-8762-92f6a5c56ac1"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What are the three bandwidth profiles used in the evaluation, and how is the 'Step' profile defined?",
+    "relevant_chunk_ids": [
+      "c8792866-21e0-4b26-82e3-5bfb4fe8f425"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What is the definition of 'Average time to switch' in the context of a client's Track subscription?",
+    "relevant_chunk_ids": [
+      "1bbf1c5d-a87f-4bf8-8dd2-98181b695b44"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What was the maximum bitrate target approached by the time-shifted client during the evaluation of early ABR semantics within MoQ?",
+    "relevant_chunk_ids": [
+      "8c7a6603-6ab3-4d81-ab60-f3114cf144e4"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Who are the authors of the paper 'BOLA: Near-Optimal Bitrate Adaptation for Online Videos' published in IEEE/ACM Transactions on Networking?",
+    "relevant_chunk_ids": [
+      "b416ab74-629a-46af-b9ac-5b0b85d5cf40"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  }
+]

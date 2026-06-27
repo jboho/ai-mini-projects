@@ -1,0 +1,37 @@
+{
+  "tag": "baseline",
+  "total_generated": 50,
+  "passed_validation": 50,
+  "judged": 50,
+  "overall_failure_rate": 0.3,
+  "overall_failure_ci_95": [
+    0.17297748231120594,
+    0.42702251768879407
+  ],
+  "per_mode_rates": {
+    "incomplete_answer": 0.06,
+    "safety_violations": 0.0,
+    "unrealistic_tools": 0.0,
+    "overcomplicated_solution": 0.16,
+    "missing_context": 0.0,
+    "poor_quality_tips": 0.18
+  },
+  "category_coverage": {
+    "counts": {
+      "hvac": 16,
+      "plumbing": 10,
+      "general": 9,
+      "electrical": 8,
+      "appliance": 7
+    },
+    "entropy": 2.2558543814495713,
+    "all_represented": true
+  },
+  "worst_items": [
+    {
+      "trace_id": "qa_0019",
+      "category": "hvac",
+      "failure_count": 3
+    }
+  ]
+}

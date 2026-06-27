@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is the purpose of the AI-integrated Design of Experiment (DoE) framework proposed in the CoWoS packaging case study?",
+    "relevant_chunk_ids": [
+      "b3aab069-2ec7-4723-97f4-76d1526811f3"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "How do application-specific requirements, such as those for automotive systems compared to consumer-level devices, impact the efficiency and sampling needs of in-line inspection?",
+    "relevant_chunk_ids": [
+      "b55f103c-f4d3-4445-825b-3821d456f863"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What factors cause X-ray compatibility issues and inspection challenges in advanced package inspection?",
+    "relevant_chunk_ids": [
+      "e6dfa8af-1f40-4b85-852f-7fa611d20c67"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What is the purpose of the X-ADAPT solution when design updates to enhance X-ray compatibility are not feasible due to stringent performance constraints?",
+    "relevant_chunk_ids": [
+      "bcb3a0ca-2758-4f13-99ab-c76930075119"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What is the purpose of Design Rule Checking (DRC) in integrated circuit and package design?",
+    "relevant_chunk_ids": [
+      "61f2d6f8-d138-4402-bb1b-3c69e7c77107"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What is the purpose of the proposed AI-integrated Design of Experiment (DoE) framework in the context of advanced packaging?",
+    "relevant_chunk_ids": [
+      "d928ca81-98b2-4a88-908f-d91acc8aec12"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What quantitative metrics are used to assess X-ray compatibility in the proposed design framework?",
+    "relevant_chunk_ids": [
+      "9050b792-81b7-421e-9d44-a1635c3a3c75"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What are some examples of DFI parameters used to establish design guidelines for a typical CoWoS technology design?",
+    "relevant_chunk_ids": [
+      "da2ddd39-9b1e-409b-9cfc-d24b10280c60"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "To ensure clear delineation and accurate interpretation in X-ray imaging, how much larger should features be compared to the system's resolution?",
+    "relevant_chunk_ids": [
+      "fd4a25fe-fb68-4fb5-9023-471950ff6ce6"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "In the CoWoS case study involving the Nvidia P100, which region was identified as the most challenging for X-ray inspection?",
+    "relevant_chunk_ids": [
+      "957af087-2653-49ef-8a6c-330add8fd961"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What is the minimum required interconnect pitch within the RDL to ensure that lines are distinguishable in an X-ray image?",
+    "relevant_chunk_ids": [
+      "615ca955-6d45-4c2f-ba24-0c20059c3536"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What are the variable range and step values for microbump pitch and microbump height in the case study design parameters?",
+    "relevant_chunk_ids": [
+      "ac1a149c-2b35-4d97-98bb-7009f2407972"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What is the constant C4 bump pitch used in the X-ray imaging setup?",
+    "relevant_chunk_ids": [
+      "7e24724c-53ae-41a1-843d-a6e6caeed567"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What are the source-sample and sample-detector distances used in the study?",
+    "relevant_chunk_ids": [
+      "37c9a849-eb44-40a8-9614-ef2a084a031a"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Why does microbump underfill exhibit low feature importance in the random forest classifier model?",
+    "relevant_chunk_ids": [
+      "8dad7c84-2d21-4da9-803c-9b83f26f561a"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Why was Random Forest selected for feature importance analysis over other models like Logistic Regression and Na\u00efve Bayes?",
+    "relevant_chunk_ids": [
+      "434ee26d-b13d-4f10-ba7e-ccc5e49a8142"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Which feature is the most significant in determining X-ray compatibility according to the random forest model analysis?",
+    "relevant_chunk_ids": [
+      "1c15e4d7-93e9-4b8b-b51b-0b2902481f00"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Which factors are ranked third and fourth in terms of feature importance for influencing inspection accuracy in advanced packaging?",
+    "relevant_chunk_ids": [
+      "cfcaebc6-fbdb-4959-a866-07294e5ff7c3"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What is the spatial resolution achieved by the 3D X-ray tools used to characterize sub-micron 3D defects from intact advanced packages to wafer level packaging, as described by S. Lau et al.?",
+    "relevant_chunk_ids": [
+      "e6d48dd3-8984-4b8e-a40a-2586577e67df"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "What is the purpose of the CMx-ray metric as described in the 2023 IEEE Physical Assurance and Inspection of Electronics (PAINE) proceedings?",
+    "relevant_chunk_ids": [
+      "c9b06b2e-1035-47b5-85cf-ce333350bdf8"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 7
+    }
+  }
+]

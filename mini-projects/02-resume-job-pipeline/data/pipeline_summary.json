@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-03-11T00:47:55.691963+00:00",
+  "totals": {
+    "pairs_generated": 50,
+    "valid_pairs": 50,
+    "invalid_pairs": 0
+  },
+  "correction": {
+    "correction_rate": 0.0,
+    "corrected": 0,
+    "permanently_failed": 0,
+    "attempts_histogram": {}
+  },
+  "failure_rates": {
+    "experience_mismatch": 0.16,
+    "seniority_mismatch": 0.28,
+    "missing_core_skills": 0.08,
+    "hallucinated_skills": 0.42,
+    "awkward_language": 0.4
+  },
+  "overall_failure_rate": 0.54,
+  "avg_skills_overlap": 0.738,
+  "by_fit_level": {
+    "Excellent": {
+      "experience_mismatch": 0.0,
+      "seniority_mismatch": 0.0,
+      "missing_core_skills": 0.0,
+      "hallucinated_skills": 0.5,
+      "awkward_language": 0.0
+    },
+    "Good": {
+      "experience_mismatch": 0.0,
+      "seniority_mismatch": 0.0,
+      "missing_core_skills": 0.0,
+      "hallucinated_skills": 0.0,
+      "awkward_language": 0.0
+    },
+    "Partial": {
+      "experience_mismatch": 0.0,
+      "seniority_mismatch": 0.0,
+      "missing_core_skills": 0.2,
+      "hallucinated_skills": 0.0,
+      "awkward_language": 0.0
+    },
+    "Poor": {
+      "experience_mismatch": 0.0,
+      "seniority_mismatch": 0.7,
+      "missing_core_skills": 0.2,
+      "hallucinated_skills": 0.6,
+      "awkward_language": 1.0
+    },
+    "Mismatch": {
+      "experience_mismatch": 0.8,
+      "seniority_mismatch": 0.7,
+      "missing_core_skills": 0.0,
+      "hallucinated_skills": 1.0,
+      "awkward_language": 1.0
+    }
+  },
+  "by_template": {
+    "formal": {
+      "experience_mismatch": 0.0,
+      "seniority_mismatch": 0.0,
+      "missing_core_skills": 0.0,
+      "hallucinated_skills": 0.5,
+      "awkward_language": 0.0
+    },
+    "casual": {
+      "experience_mismatch": 0.0,
+      "seniority_mismatch": 0.0,
+      "missing_core_skills": 0.0,
+      "hallucinated_skills": 0.0,
+      "awkward_language": 0.0
+    },
+    "technical": {
+      "experience_mismatch": 0.0,
+      "seniority_mismatch": 0.0,
+      "missing_core_skills": 0.2,
+      "hallucinated_skills": 0.0,
+      "awkward_language": 0.0
+    },
+    "achievement": {
+      "experience_mismatch": 0.0,
+      "seniority_mismatch": 0.7,
+      "missing_core_skills": 0.2,
+      "hallucinated_skills": 0.6,
+      "awkward_language": 1.0
+    },
+    "career_changer": {
+      "experience_mismatch": 0.8,
+      "seniority_mismatch": 0.7,
+      "missing_core_skills": 0.0,
+      "hallucinated_skills": 1.0,
+      "awkward_language": 1.0
+    }
+  },
+  "niche_vs_standard": {
+    "niche": {
+      "experience_mismatch": 0.2,
+      "seniority_mismatch": 0.2,
+      "missing_core_skills": 0.2,
+      "hallucinated_skills": 0.5,
+      "awkward_language": 0.4
+    },
+    "standard": {
+      "experience_mismatch": 0.15,
+      "seniority_mismatch": 0.3,
+      "missing_core_skills": 0.05,
+      "hallucinated_skills": 0.4,
+      "awkward_language": 0.4
+    }
+  },
+  "schema_field_failures": {},
+  "llm_judge": {
+    "avg_quality_score": 6.8,
+    "avg_hallucination_score": 1.18,
+    "avg_awkward_language_score": 2.42,
+    "total_judged": 50,
+    "gap_analysis": {
+      "hallucination": {
+        "rule_based_flags": 21,
+        "judge_flags": 5,
+        "both_agree": 5
+      },
+      "awkward_language": {
+        "rule_based_flags": 20,
+        "judge_flags": 19,
+        "both_agree": 17
+      }
+    }
+  }
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is the purpose of the proposed framework based on AI-integrated Design of Experiment (DoE) in the context of advanced packaging X-ray inspection?",
+    "relevant_chunk_ids": [
+      "8e034d22-7aca-4d99-a91a-3cf2adf5f588"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What specific components in 5D Chip-on-Wafer-on-Substrate (CoWoS) technology require precise inspection strategies to prevent issues with connectivity and performance?",
+    "relevant_chunk_ids": [
+      "9cff6046-d1c0-4497-aa76-02882fda9955"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What is the purpose of the X-ray compatibility metric, CM X-ray?",
+    "relevant_chunk_ids": [
+      "3951a27a-08e9-4169-9af2-34ff901f9732"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What is the purpose of X-ADAPT when design updates for X-ray compatibility are not feasible?",
+    "relevant_chunk_ids": [
+      "afb5cd9d-e559-421a-94b4-965c74f87058"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What is the purpose of the proposed AI-integrated Design of Experiment (DoE) framework in the context of X-ray compatibility?",
+    "relevant_chunk_ids": [
+      "39b5d233-54ba-4b75-97c9-0633659c5455"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What are the defined levels for interposer thickness during the factor selection process?",
+    "relevant_chunk_ids": [
+      "9a7b1cda-5b76-4cfa-9f43-94955f6bb8df"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "To ensure clear detection and separation, what is the minimum required TSV pitch (P) in relation to the imaging system's resolution (R)?",
+    "relevant_chunk_ids": [
+      "25c7fb86-7166-43d6-8e71-456a55c8823b"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "Which region of the Nvidia P100 was identified as the most challenging for X-ray inspection?",
+    "relevant_chunk_ids": [
+      "902ede3e-229e-4afe-ad62-f14679e8aba6"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What design parameters and specifications are included in the design region for the study involving microbump and C4 bump pitch?",
+    "relevant_chunk_ids": [
+      "1f3eea34-2d45-41c9-b1a4-8b66119b8b36"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What software is used for X-ray simulation to constrain the problem and allow for faster convergence to an optimum?",
+    "relevant_chunk_ids": [
+      "34dbcac5-8004-4333-b0f7-2f101450f46e"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Which algorithm is used to select samples from the test space in the context of the optimization problem described?",
+    "relevant_chunk_ids": [
+      "ac6b9356-606e-4fd6-958e-2657a3eab211"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What factors in advanced IC packaging are introducing new complexities that impact the design constraints for X-ray compatibility?",
+    "relevant_chunk_ids": [
+      "931a3d29-b40d-46d5-b7fb-b2596f597971"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Why must design guideline development frameworks remain flexible and be continuously updated in the context of packaging technologies and architectures?",
+    "relevant_chunk_ids": [
+      "c59b6fbd-cef7-4b32-ad5c-b65232a50494"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Which design parameter most significantly impacts X-ray blur and imaging artifacts in a CoWoS technology design region?",
+    "relevant_chunk_ids": [
+      "1bb9dbd5-520b-42a5-a495-1b65054f4bb0"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Who are the authors of the work titled 'Design rule development for improved inspection capabilities'?",
+    "relevant_chunk_ids": [
+      "a44c1d30-3732-48ad-bac8-59bfeef91726"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "What is the name of the fast X-ray tomography simulation software described in the 2024 SPIE proceedings by Berheas, Livingstone, and Fayard?",
+    "relevant_chunk_ids": [
+      "26e4fd75-01c8-4112-b9c3-08cecdb26d78"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "Which publication discusses the optimization of X-ray inspection for advanced packaging?",
+    "relevant_chunk_ids": [
+      "1ab44820-a22e-497f-88db-f138b8f663fb"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "What is the purpose of the CMx-ray metric introduced by Serna et al. in the 2023 IEEE Physical Assurance and Inspection of Electronics (PAINE) conference?",
+    "relevant_chunk_ids": [
+      "9abd3c38-70e0-496f-9aaf-9797c7161fa6"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "Who authored the paper titled 'X-ADAPT: AI-driven design-based strategy to address x-ray compatibility challenges in advanced packaging metrology' presented at SPIE Advanced Lithography+Patterning in San Jose, 2025?",
+    "relevant_chunk_ids": [
+      "336ad94b-6217-47c9-9f64-bb0a629c5742"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "What is the focus of the research presented by Farahmandi and M. Tehranipoor in their 2023 IEEE International Test Conference paper?",
+    "relevant_chunk_ids": [
+      "9f64aecd-1150-4312-9aef-ea88fa42689d"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 7
+    }
+  }
+]
