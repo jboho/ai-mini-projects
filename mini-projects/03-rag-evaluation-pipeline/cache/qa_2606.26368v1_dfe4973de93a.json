@@ -1,0 +1,142 @@
+[
+  {
+    "question": "What is the purpose of the in-progress SWITCH specification for Media over QUIC (MoQ) Transport?",
+    "relevant_chunk_ids": [
+      "b862f832-65fc-4b04-acb7-44a62ce4968a"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "Why is the Media Over QUIC Transport (MOQT) protocol considered a better option for real-time video streaming compared to LL-DASH?",
+    "relevant_chunk_ids": [
+      "8a5b4339-553c-455e-a75b-80e2b4e89381"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "According to the MOQT Streaming Format (MSF) and CMAF compliant MOQT Streaming Format (CMSF), how are video frames, Groups of Pictures (GOP), and video representations mapped to MOQT components?",
+    "relevant_chunk_ids": [
+      "76930623-9ced-4346-a6f2-6c41178ea940"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What are the three signals an ABR controller uses to issue representation-change requests in a time-shifted subscriber configuration?",
+    "relevant_chunk_ids": [
+      "064ad88c-836c-401f-a9f5-610e163a6058"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "How does the Time Shift-Aware SWITCH (TSA-SWITCH) implementation differ from the pending MOQ SWITCH design regarding the determination of the Group to receive during a quality switch?",
+    "relevant_chunk_ids": [
+      "96f1d85f-dffa-438a-a48c-fa2fd878c4c1"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "How does the dash.js client determine which Group ID to use as the START_LOCATION_GROUP parameter during a representation switch?",
+    "relevant_chunk_ids": [
+      "637fd2c7-dd26-4bf0-b111-acf504c08910"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What are the target bitrates used for the SWITCH field ladder in kbps?",
+    "relevant_chunk_ids": [
+      "6bee28fb-c22e-445d-8615-496a35de0524"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What are the average results for TSA-SWITCH beginning at the live edge?",
+    "relevant_chunk_ids": [
+      "c97d7ee7-17d7-47ab-bf4a-997a799a2ab0"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What is the specific configuration of the 'Step' bandwidth profile used in the evaluation?",
+    "relevant_chunk_ids": [
+      "be9368a7-8181-4cc5-a37b-9e0f3a9a2cd7"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What are the three metrics measured for each experimental run?",
+    "relevant_chunk_ids": [
+      "f9a1f18f-4e41-415f-a2aa-d542b7f5d312"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Why does the existing MOQtail Live-SWITCH implementation experience substantial rebuffering of up to 24% for L2A?",
+    "relevant_chunk_ids": [
+      "bae4ed69-6ae3-4537-baa5-e6a052f1f9fe"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What is the likely cause of the higher than expected overall switch latency for live-oriented clients using the TSA-SWITCH mechanism?",
+    "relevant_chunk_ids": [
+      "5f840d12-eb95-4893-987f-b9db5834f20a"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What is the purpose of the open-source MoQ Mininet integration provided by the authors?",
+    "relevant_chunk_ids": [
+      "139dede7-d68a-45f8-9fec-93b360608df6"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Which researchers authored the paper titled 'BOLA: Near-Optimal Bitrate Adaptation for Online Videos' published in IEEE/ACM Transactions on Networking in 2020?",
+    "relevant_chunk_ids": [
+      "2db80da9-578d-4eed-8413-271de7e38a14"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 6
+    }
+  }
+]
