@@ -10,6 +10,13 @@ from pathlib import Path
 from pydantic import BaseModel, Field
 from pydantic_settings import BaseSettings
 
+# Prefer a per-project .env, else fall back to the repo-root .env (single shared file).
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+_ENV_FILE = next(
+    (p for p in (_PROJECT_ROOT / ".env", _PROJECT_ROOT.parent.parent / ".env") if p.exists()),
+    _PROJECT_ROOT / ".env",
+)
+
 
 class ParserType(str, enum.Enum):
     PDFPLUMBER = "pdfplumber"
@@ -45,7 +52,7 @@ class PipelineSettings(BaseSettings):
     cohere_api_key: str = ""
     num_questions_per_config: int = 20
 
-    model_config = {"env_file": ".env", "extra": "ignore"}
+    model_config = {"env_file": str(_ENV_FILE), "extra": "ignore"}
 
 
 class ChunkingConfig(BaseModel):
