@@ -1,0 +1,52 @@
+---
+description: Search for existing patterns before writing new Python code; conform to established conventions
+globs: "**/*.py"
+alwaysApply: false
+---
+
+# Codebase Conformance (Python)
+
+Before writing new code, SEARCH THE CODEBASE for existing implementations of the same pattern. Conform to established conventions rather than inventing new approaches.
+
+## Before Writing New Code
+
+### Step 1: Pattern Discovery
+
+Before implementing any of these, search for 2-3 existing examples first:
+
+- **Data generators** — How do `mini-exercises/synthetic-data/` generators structure prompts, logging, output?
+- **Evaluators** — How do evaluators handle LLM output parsing, metrics, file I/O?
+- **API clients** — How do clients manage OpenAI/OpenRouter, env vars, error handling?
+- **Configuration** — How does the codebase load API keys, config from `.env` or env vars?
+- **Logging** — Use `logging` module; how do existing files configure and use it?
+
+### Step 2: Python Checklist
+
+After writing code, verify:
+
+- [ ] `logging` for library code, not `print()` for debug output
+- [ ] API keys from env vars (e.g. `os.environ`, `python-dotenv`), never hardcoded
+- [ ] Try/except with specific exception types, not bare `except`
+- [ ] Type hints on public function signatures
+- [ ] JSON via `json.dumps()` / `json.loads()`, not manual string building
+- [ ] No unused imports
+
+### Step 3: Review Checklist
+
+When reviewing code (your own or others'), verify:
+
+1. **Pattern conformance** — Does this code follow how similar code works elsewhere in the repo?
+2. **Completeness** — Are ALL cases handled, not just the happy path?
+3. **Architectural fit** — Is this module necessary, or does existing infrastructure already handle it?
+4. **Security posture** — Do security decisions fail CLOSED (deny by default), not OPEN?
+
+## Common Anti-Patterns
+
+| Anti-Pattern | Correct Pattern |
+|--------------|-----------------|
+| `print()` in library code | `logging.getLogger(__name__).info(...)` |
+| Bare `except:` | `except ValueError:` or specific type |
+| Manual JSON `"{\"key\":\"" + val + "\"}"` | `json.dumps({"key": val})` |
+| Hardcoded API key | `os.environ.get("OPENAI_API_KEY")` or `python-dotenv` |
+| Env var used without validation | Validate format; raise clear error if missing/invalid |
+| Scattered config | Centralize in one module or `load_dotenv()` at entry point |

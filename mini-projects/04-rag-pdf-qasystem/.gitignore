@@ -1,0 +1,15 @@
+# Secrets
+.env
+
+# Datasets and generated artifacts (regenerable via scripts/download_dataset.py)
+data/*.json
+data/papers/*
+data/corpus/*
+data/indices/*
+!data/**/.gitkeep
+# experiment_results.json is tracked so the repo ships with real numbers.
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/

@@ -1,0 +1,14 @@
+# Default single-run pipeline configuration.
+chunker:
+  name: recursive
+  params:
+    chunk_size: 512
+    overlap: 64
+embedder: sentence-transformers/all-MiniLM-L6-v2
+retriever:
+  name: hybrid
+  params:
+    alpha: 0.5
+reranker: null
+top_k: 10
+k_values: [1, 3, 5, 10]
