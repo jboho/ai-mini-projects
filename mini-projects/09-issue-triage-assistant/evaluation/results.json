@@ -1,0 +1,76 @@
+{
+  "classification_accuracy": {
+    "metric": "classification_accuracy",
+    "method": "confident-classification rate (confidence >= 0.7); no labeled ground truth",
+    "evaluated": 14,
+    "confident": 14,
+    "accuracy": 1.0,
+    "component_agreement": 0.071,
+    "component_comparable": 14
+  },
+  "resolution_relevance": {
+    "metric": "resolution_relevance",
+    "method": "Jaccard(generated steps, actual fix comment)",
+    "evaluated": 4,
+    "mean_relevance": 0.111
+  },
+  "knowledge_base_coverage": {
+    "categories_total": 13,
+    "categories_covered": 0,
+    "coverage_pct": 0.0,
+    "uncovered": [
+      "api_compatibility",
+      "build",
+      "concurrency",
+      "configuration",
+      "data_processing",
+      "dependency",
+      "io_storage",
+      "memory",
+      "network",
+      "other",
+      "performance",
+      "security",
+      "serialization"
+    ],
+    "has_entries": false,
+    "metric": "knowledge_base_coverage"
+  },
+  "duplicate_detection_rate": {
+    "metric": "duplicate_detection_rate",
+    "known_duplicate_pairs": 1,
+    "detected": 1,
+    "rate": 1.0
+  },
+  "categories_total": 13,
+  "judge_enabled": true,
+  "judge_sample": [
+    {
+      "incident_id": 1,
+      "scores": {
+        "clarity": 3,
+        "accuracy": 4,
+        "actionability": 2,
+        "overall": 3.0
+      }
+    },
+    {
+      "incident_id": 2,
+      "scores": {
+        "clarity": 3,
+        "accuracy": 4,
+        "actionability": 2,
+        "overall": 3.0
+      }
+    },
+    {
+      "incident_id": 3,
+      "scores": {
+        "clarity": 3,
+        "accuracy": 4,
+        "actionability": 2,
+        "overall": 3.0
+      }
+    }
+  ]
+}
