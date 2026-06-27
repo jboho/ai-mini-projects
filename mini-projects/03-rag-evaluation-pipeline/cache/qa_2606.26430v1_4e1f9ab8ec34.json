@@ -1,0 +1,112 @@
+[
+  {
+    "question": "What specific components in advanced packaging require precise and robust inspection strategies to identify flaws that may impact performance and connectivity?",
+    "relevant_chunk_ids": [
+      "e3f44d11-771e-4478-b5cf-4957263a7567"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What are the common causes of X-ray compatibility issues and inspection challenges in advanced package inspection?",
+    "relevant_chunk_ids": [
+      "e5286763-d890-4496-b4b0-1a149f07db87"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What is the purpose of the proposed AI-integrated Design of Experiment (DoE) framework in the context of advanced packaging?",
+    "relevant_chunk_ids": [
+      "4e94168f-21f4-4199-aafa-0eb4f2c376f4"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What metrics are used to quantitatively assess X-ray compatibility in the design framework?",
+    "relevant_chunk_ids": [
+      "248e5c2d-65f5-41ab-a622-7f429a01b20e"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "To ensure clear delineation and accurate interpretation in X-ray imaging, how much larger should features be compared to the system's resolution?",
+    "relevant_chunk_ids": [
+      "4b00edac-074e-4707-8785-434756e02778"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What is the recommended spacing between bumps and the underlying RDL to maintain clarity in X-ray imaging, and how is this value calculated relative to the resolution R?",
+    "relevant_chunk_ids": [
+      "ce322c38-8218-45da-958b-8653dfb48fe2"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What is the constant value for the die thickness in the case study design parameters?",
+    "relevant_chunk_ids": [
+      "2e610900-e52f-4178-9741-c8eb350ee73c"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Which algorithm is used to select samples from the test space in the hierarchical partitioning scheme used in this study?",
+    "relevant_chunk_ids": [
+      "8f25a14c-fa59-44c4-a2fd-126409d9c6a9"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Why was the Random Forest model chosen over other models like Logistic Regression or SHAP for the feature importance analysis in this study?",
+    "relevant_chunk_ids": [
+      "8faeb457-b452-4b16-9f9a-c87f8960901d"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What are the top four ranked factors influencing inspection accuracy in the described AI-integrated DoE framework, in order of importance?",
+    "relevant_chunk_ids": [
+      "be8e62b2-7380-4661-93b5-cac81637e31b"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What is the purpose of the CMx-ray metric described in the 2023 IEEE Physical Assurance and Inspection of Electronics (PAINE) proceedings?",
+    "relevant_chunk_ids": [
+      "252e0424-11a1-484b-9265-ef4fe7645e4a"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 7
+    }
+  }
+]

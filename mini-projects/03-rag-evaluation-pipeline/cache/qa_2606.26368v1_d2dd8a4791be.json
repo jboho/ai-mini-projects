@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is the purpose of the in-progress SWITCH specification for MoQ Transport?",
+    "relevant_chunk_ids": [
+      "2d543b2a-56a2-4b69-ab76-777784f961a6"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What are the primary contributions of the work regarding the MOQtail reference software and ABR switching?",
+    "relevant_chunk_ids": [
+      "8a42f7bb-ac70-4cfc-b732-dd2011165ad2"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "How does the Media over QUIC Transport (MOQT) protocol deliver data units and how are they structured?",
+    "relevant_chunk_ids": [
+      "9f58cb70-eec5-48d1-ade0-87ead2088f94"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What is the difference between the MOQT Streaming Format (MSF) and the CMAF compliant MOQT Streaming Format (CMSF)?",
+    "relevant_chunk_ids": [
+      "8d4e338e-bff5-482d-b5b8-cd0c45afa453"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "How does the relay handle both live and time-shifted clients in theQT protocol?",
+    "relevant_chunk_ids": [
+      "500837da-ea96-4ba9-8df3-2619e961dcdb"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What is the difference between the Joining FETCH and SUBSCRIBE mechanisms in terms of how they handle data delivery from a Track?",
+    "relevant_chunk_ids": [
+      "c1538b8a-bb65-4f57-a7ac-9c9b9b37b79f"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "How does the relay determine the target Group when a client includes a DELAY_GROUPS subscription parameter in a SUBSCRIBE request?",
+    "relevant_chunk_ids": [
+      "ed0967fa-97a7-49f6-835a-3d766e678cd6"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "How does the client determine the START_LOCATION_GROUP parameter when the ABR controller requests a representation switch?",
+    "relevant_chunk_ids": [
+      "1a5e0177-ebb3-46c1-a215-e47887c59c6b"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What are the target bitrates used for the five-rung HEVC ladder in the pre-encoded video segments of Tears of Steel?",
+    "relevant_chunk_ids": [
+      "d1e1b007-ee7e-4482-9ad9-3da8daf8d0f3"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What is the received bitrate (kbps) for the 'L2A' configuration in the Live-SWITCH results on the live edge?",
+    "relevant_chunk_ids": [
+      "2bf7753d-f267-472a-904b-7f922e043005"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What are the average results for TSA-SWITCH beginning at the live edge?",
+    "relevant_chunk_ids": [
+      "cec4b6df-5876-422e-b5a2-49948937b8e2"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What is the specific version of headless Chromium used for the client running in the separate network namespace?",
+    "relevant_chunk_ids": [
+      "c09bcdb8-481b-48f2-a905-44954f671fc4"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What are the three bandwidth profiles used in the evaluation?",
+    "relevant_chunk_ids": [
+      "fa01b96d-f821-4bea-8b65-80a0efb1430f"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What are the characteristics of the Sinusoidal bandwidth profile used to probe ABR behavior?",
+    "relevant_chunk_ids": [
+      "ea19090b-6eae-415a-bc1e-f291f4cb332d"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What are the trade-offs when a live stream client moves its playhead further from the live edge to benefit more from the relay's cache?",
+    "relevant_chunk_ids": [
+      "9e168881-fa3b-426e-bff7-0a84750da5f8"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Why does the Live-SWITCH configuration experience substantial rebuffering of up to 24% of the playback duration for L2A?",
+    "relevant_chunk_ids": [
+      "d8d18a2d-c089-4464-9278-d478b2e7aa12"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What was the maximum bitrate target in the evaluation of early ABR semantics within MoQ?",
+    "relevant_chunk_ids": [
+      "286ea663-7a07-4566-a94c-ba3533ff52f9"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What has been provided to streamline the further evaluation of MoQ ABR through repeatable experiments?",
+    "relevant_chunk_ids": [
+      "9abb0605-410e-4a69-a13f-c3bd31790efd"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Who directed the movie 'Tears of Steel' produced by the Blender Foundation?",
+    "relevant_chunk_ids": [
+      "14313bf0-2523-4535-9109-8a07cf067d27"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Who are the authors of the paper titled 'Media over QUIC Transport vs. Low-Latency DASH: A Deathmatch Testbed'?",
+    "relevant_chunk_ids": [
+      "9a722bcb-bb8f-4e2f-80e1-739e838ea096"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 6
+    }
+  }
+]

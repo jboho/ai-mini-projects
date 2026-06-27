@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is the purpose of the in-progress SWITCH specification for Media over QUIC (MoQ) Transport?",
+    "relevant_chunk_ids": [
+      "5e422883-93e8-4e23-ac6e-ac588fd455c3"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What are the main contributions of the work regarding the open-source reference MoQ software and network simulations?",
+    "relevant_chunk_ids": [
+      "33f087a5-5829-4107-a2d7-94fdf42af5ea"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "Why is MOQT positioned as a superior protocol for real-time video media delivery compared to LL-DASH?",
+    "relevant_chunk_ids": [
+      "ac904276-27f2-43bc-ba18-a83694ae8138"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "Under the CMAF compliant MOQT Streaming Format (CMSF), how do video frames, Groups of Pictures (GOP), and video representations map to MOQT entities?",
+    "relevant_chunk_ids": [
+      "f6c3ab85-e057-4c56-a7d2-50e01fc01b13"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "In the time-shifted configuration described, how is the live edge represented and what does it signify?",
+    "relevant_chunk_ids": [
+      "65e78315-b16c-401f-b490-4bd5ea5919f4"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "How does the proposed MOQ SWITCH mechanism allow a subscriber to move an existing subscription between Tracks?",
+    "relevant_chunk_ids": [
+      "d4fa1c38-aee5-4bf0-a621-4e732f2eee7c"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "How does the relay determine where delivery should begin after receiving a request?",
+    "relevant_chunk_ids": [
+      "6fc495ec-9543-4f20-92a1-a0bf34de861b"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "How does a client determine the START_LOCATION_GROUP parameter when an ABR controller requests a representation switch?",
+    "relevant_chunk_ids": [
+      "94023bdb-8275-4263-b84e-eab87e326347"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What is the average rebuffering ratio for the L2A configuration under the Sinusoidal condition in the TSA-SWITCH results?",
+    "relevant_chunk_ids": [
+      "fae84ce9-a635-44d4-835e-90eceababd22"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "What does the 'All' configuration represent in relation to dash.js ABR rules?",
+    "relevant_chunk_ids": [
+      "50e7b195-c6c6-4fea-8256-4b2d29b6c00d"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What is the purpose of using a sinusoidal bandwidth profile during experimental runs?",
+    "relevant_chunk_ids": [
+      "4f5b1d6c-d33e-4153-9e85-a1907d5bfdc6"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What metrics are measured for each experimental run of TSA-SWITCH beginning with a 10-second time shift?",
+    "relevant_chunk_ids": [
+      "eb6468a4-a9f4-437b-9ad1-4a9bcf15433c"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Which reference software implements the Live-SWITCH mechanism used to keep the client close to the live edge?",
+    "relevant_chunk_ids": [
+      "fdfefa6b-086d-4aad-bb49-6283ff70f310"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "Which configurations provide the best all-around increases in performance?",
+    "relevant_chunk_ids": [
+      "e123bab3-ee6b-425a-b249-195f6a4a7ef3"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "What was evaluated within MoQ to explore heterogeneous latency regimes using a single SWITCH implementation?",
+    "relevant_chunk_ids": [
+      "4491ee58-53a7-4c06-949c-d6ddf38c5bd0"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "Who are the authors of the 2016 paper presented at the 7th International Conference on Multimedia Systems (MMSys \u201916)?",
+    "relevant_chunk_ids": [
+      "daea6c51-9bdb-42f0-99c8-356c59cb06e2"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What software implementation is being used to inform the development of the SWITCH design?",
+    "relevant_chunk_ids": [
+      "508ca945-044e-4aea-bac3-6d79ee56e53d"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What is the specific release tag for the dash.js reference MPEG-DASH player provided by the DASH Industry Forum?",
+    "relevant_chunk_ids": [
+      "7667d9c2-1466-4a89-9848-2555c6c59a9d"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What is the documentation URL for the dash.js SwitchHistoryRule according to the DASH Industry Forum?",
+    "relevant_chunk_ids": [
+      "b34e98da-ad45-4f54-8601-0d12f1106cf7"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What was the focus of the testbed analysis conducted by M. Nguyen and colleagues in their 2022 IEEE Transactions on Multimedia publication?",
+    "relevant_chunk_ids": [
+      "e5d68fe6-429c-41e5-b965-02dec2bf6143"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 6
+    }
+  }
+]
