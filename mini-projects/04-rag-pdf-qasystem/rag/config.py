@@ -19,6 +19,12 @@ INDICES_DIR = DATA_DIR / "indices"
 RESULTS_DIR = PROJECT_ROOT / "experiments" / "results"
 CONFIG_DIR = PROJECT_ROOT / "config"
 
+# Prefer a per-project .env, else fall back to the repo-root .env (single shared file).
+_ENV_FILE = next(
+    (p for p in (PROJECT_ROOT / ".env", PROJECT_ROOT.parent.parent / ".env") if p.exists()),
+    PROJECT_ROOT / ".env",
+)
+
 
 class PipelineSettings(BaseSettings):
     # Generation/judge run through a chat provider; embeddings + cross-encoder
@@ -36,7 +42,7 @@ class PipelineSettings(BaseSettings):
 
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
 
-    model_config = {"env_file": ".env", "extra": "ignore"}
+    model_config = {"env_file": str(_ENV_FILE), "extra": "ignore"}
 
 
 class ComponentConfig(BaseModel):
