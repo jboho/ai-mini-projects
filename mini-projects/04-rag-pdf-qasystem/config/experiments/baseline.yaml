@@ -1,0 +1,27 @@
+# Experiment grid: the cartesian product of these lists is expanded into
+# RunConfig cells by rag.config.load_experiment_grid.
+# 4 chunkers x 2 embedders x 3 retrievers x 1 reranker = 24 configurations.
+chunkers:
+  - name: fixed
+    params: { chunk_size: 256, overlap: 0 }
+  - name: sliding
+    params: { chunk_size: 256, overlap: 64 }
+  - name: recursive
+    params: { chunk_size: 512, overlap: 64 }
+  - name: semantic
+    params: { max_tokens: 384 }
+
+embedders:
+  - sentence-transformers/all-MiniLM-L6-v2
+  - sentence-transformers/all-mpnet-base-v2
+
+retrievers:
+  - name: dense
+  - name: bm25
+  - name: hybrid
+    params: { alpha: 0.5 }
+
+rerankers: [null]
+
+top_k: 10
+k_values: [1, 3, 5, 10]

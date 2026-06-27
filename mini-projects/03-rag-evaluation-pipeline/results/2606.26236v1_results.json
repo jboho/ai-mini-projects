@@ -1,0 +1,622 @@
+[
+  {
+    "experiment_id": "pdfplumber_fixed_size_cs256_ov50__none__bm25",
+    "embedding_model": "none",
+    "chunking_method": "pdfplumber_fixed_size_cs256_ov50",
+    "retrieval_method": "bm25",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.8,
+        "3": 0.85,
+        "5": 0.85,
+        "10": 0.95
+      },
+      "precision_at_k": {
+        "1": 0.8,
+        "3": 0.28333333333333327,
+        "5": 0.17000000000000004,
+        "10": 0.09500000000000003
+      },
+      "mrr": 0.832142857142857,
+      "map_score": 0.832142857142857,
+      "ndcg_at_k": {
+        "1": 0.8,
+        "3": 0.825,
+        "5": 0.825,
+        "10": 0.8594770260220678
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 0.00014736870070919394
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_fixed_size_cs256_ov50__text-embedding-3-small__vector",
+    "embedding_model": "text-embedding-3-small",
+    "chunking_method": "pdfplumber_fixed_size_cs256_ov50",
+    "retrieval_method": "vector",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.6,
+        "3": 0.85,
+        "5": 0.95,
+        "10": 0.95
+      },
+      "precision_at_k": {
+        "1": 0.6,
+        "3": 0.28333333333333327,
+        "5": 0.19000000000000006,
+        "10": 0.09500000000000003
+      },
+      "mrr": 0.7333333333333334,
+      "map_score": 0.7333333333333334,
+      "ndcg_at_k": {
+        "1": 0.6,
+        "3": 0.7446394630357187,
+        "5": 0.787707118843058,
+        "10": 0.787707118843058
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 8.856655040290207e-05
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_fixed_size_cs256_ov50__text-embedding-3-small__hybrid",
+    "embedding_model": "text-embedding-3-small",
+    "chunking_method": "pdfplumber_fixed_size_cs256_ov50",
+    "retrieval_method": "hybrid",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.8,
+        "3": 0.85,
+        "5": 0.95,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.8,
+        "3": 0.28333333333333327,
+        "5": 0.19000000000000006,
+        "10": 0.10000000000000002
+      },
+      "mrr": 0.8555555555555555,
+      "map_score": 0.8555555555555555,
+      "ndcg_at_k": {
+        "1": 0.8,
+        "3": 0.8315464876785729,
+        "5": 0.8746141434859123,
+        "10": 0.8896656432691114
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 0.00016860819960129447
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_fixed_size_cs256_ov50__text-embedding-3-large__vector",
+    "embedding_model": "text-embedding-3-large",
+    "chunking_method": "pdfplumber_fixed_size_cs256_ov50",
+    "retrieval_method": "vector",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.55,
+        "3": 0.75,
+        "5": 0.85,
+        "10": 0.95
+      },
+      "precision_at_k": {
+        "1": 0.55,
+        "3": 0.24999999999999994,
+        "5": 0.17000000000000004,
+        "10": 0.09500000000000003
+      },
+      "mrr": 0.6738095238095239,
+      "map_score": 0.6738095238095239,
+      "ndcg_at_k": {
+        "1": 0.55,
+        "3": 0.6630929753571457,
+        "5": 0.706160631164485,
+        "10": 0.7406376571865528
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 2.408960026514251e-05
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_fixed_size_cs256_ov50__text-embedding-3-large__hybrid",
+    "embedding_model": "text-embedding-3-large",
+    "chunking_method": "pdfplumber_fixed_size_cs256_ov50",
+    "retrieval_method": "hybrid",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.8,
+        "3": 0.9,
+        "5": 0.95,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.8,
+        "3": 0.29999999999999993,
+        "5": 0.19000000000000006,
+        "10": 0.10000000000000002
+      },
+      "mrr": 0.8613095238095237,
+      "map_score": 0.8613095238095237,
+      "ndcg_at_k": {
+        "1": 0.8,
+        "3": 0.8565464876785729,
+        "5": 0.8780803155822425,
+        "10": 0.8947469822489094
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 0.0001728563987853704
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_fixed_size_cs512_ov100__none__bm25",
+    "embedding_model": "none",
+    "chunking_method": "pdfplumber_fixed_size_cs512_ov100",
+    "retrieval_method": "bm25",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.5714285714285714,
+        "3": 0.9285714285714286,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.5714285714285714,
+        "3": 0.3095238095238095,
+        "5": 0.2,
+        "10": 0.1
+      },
+      "mrr": 0.7678571428571429,
+      "map_score": 0.7678571428571429,
+      "ndcg_at_k": {
+        "1": 0.5714285714285714,
+        "3": 0.7967606262755205,
+        "5": 0.8275232375664772,
+        "10": 0.8275232375664772
+      },
+      "total_queries": 14,
+      "avg_retrieval_time": 0.00012992842831798562
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_fixed_size_cs512_ov100__text-embedding-3-small__vector",
+    "embedding_model": "text-embedding-3-small",
+    "chunking_method": "pdfplumber_fixed_size_cs512_ov100",
+    "retrieval_method": "vector",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.21428571428571427,
+        "3": 0.9285714285714286,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.21428571428571427,
+        "3": 0.3095238095238095,
+        "5": 0.2,
+        "10": 0.1
+      },
+      "mrr": 0.5535714285714285,
+      "map_score": 0.5535714285714285,
+      "ndcg_at_k": {
+        "1": 0.21428571428571427,
+        "3": 0.6368934482143002,
+        "5": 0.6676560595052569,
+        "10": 0.6676560595052569
+      },
+      "total_queries": 14,
+      "avg_retrieval_time": 1.9526713523581357e-05
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_fixed_size_cs512_ov100__text-embedding-3-small__hybrid",
+    "embedding_model": "text-embedding-3-small",
+    "chunking_method": "pdfplumber_fixed_size_cs512_ov100",
+    "retrieval_method": "hybrid",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.6428571428571429,
+        "3": 0.9285714285714286,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.6428571428571429,
+        "3": 0.3095238095238095,
+        "5": 0.2,
+        "10": 0.1
+      },
+      "mrr": 0.8035714285714286,
+      "map_score": 0.8035714285714286,
+      "ndcg_at_k": {
+        "1": 0.6428571428571429,
+        "3": 0.8231227867347022,
+        "5": 0.8538853980256589,
+        "10": 0.8538853980256589
+      },
+      "total_queries": 14,
+      "avg_retrieval_time": 0.00015655342836648094
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_fixed_size_cs512_ov100__text-embedding-3-large__vector",
+    "embedding_model": "text-embedding-3-large",
+    "chunking_method": "pdfplumber_fixed_size_cs512_ov100",
+    "retrieval_method": "vector",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.21428571428571427,
+        "3": 0.6428571428571429,
+        "5": 0.7857142857142857,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.21428571428571427,
+        "3": 0.21428571428571427,
+        "5": 0.1571428571428571,
+        "10": 0.1
+      },
+      "mrr": 0.4669501133786848,
+      "map_score": 0.4669501133786848,
+      "ndcg_at_k": {
+        "1": 0.21428571428571427,
+        "3": 0.4659799295918451,
+        "5": 0.5243748842566975,
+        "10": 0.5951299211213643
+      },
+      "total_queries": 14,
+      "avg_retrieval_time": 2.588092944019341e-05
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_fixed_size_cs512_ov100__text-embedding-3-large__hybrid",
+    "embedding_model": "text-embedding-3-large",
+    "chunking_method": "pdfplumber_fixed_size_cs512_ov100",
+    "retrieval_method": "hybrid",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.5,
+        "3": 0.9285714285714286,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.5,
+        "3": 0.3095238095238095,
+        "5": 0.2,
+        "10": 0.1
+      },
+      "mrr": 0.7321428571428571,
+      "map_score": 0.7321428571428571,
+      "ndcg_at_k": {
+        "1": 0.5,
+        "3": 0.7703984658163391,
+        "5": 0.8011610771072956,
+        "10": 0.8011610771072956
+      },
+      "total_queries": 14,
+      "avg_retrieval_time": 0.0001602767136189089
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_sentence_spc5_ov1__none__bm25",
+    "embedding_model": "none",
+    "chunking_method": "pdfplumber_sentence_spc5_ov1",
+    "retrieval_method": "bm25",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.75,
+        "3": 0.85,
+        "5": 0.85,
+        "10": 0.9
+      },
+      "precision_at_k": {
+        "1": 0.75,
+        "3": 0.28333333333333327,
+        "5": 0.17000000000000004,
+        "10": 0.09000000000000002
+      },
+      "mrr": 0.80625,
+      "map_score": 0.80625,
+      "ndcg_at_k": {
+        "1": 0.75,
+        "3": 0.8130929753571458,
+        "5": 0.8130929753571458,
+        "10": 0.8288662191964322
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 0.00030531870033883023
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_sentence_spc5_ov1__text-embedding-3-small__vector",
+    "embedding_model": "text-embedding-3-small",
+    "chunking_method": "pdfplumber_sentence_spc5_ov1",
+    "retrieval_method": "vector",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.75,
+        "3": 0.85,
+        "5": 0.9,
+        "10": 0.95
+      },
+      "precision_at_k": {
+        "1": 0.75,
+        "3": 0.28333333333333327,
+        "5": 0.18000000000000005,
+        "10": 0.09500000000000003
+      },
+      "mrr": 0.8208333333333334,
+      "map_score": 0.8208333333333334,
+      "ndcg_at_k": {
+        "1": 0.75,
+        "3": 0.8130929753571458,
+        "5": 0.8346268032608155,
+        "10": 0.8524371626162164
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 3.7579300624202006e-05
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_sentence_spc5_ov1__text-embedding-3-small__hybrid",
+    "embedding_model": "text-embedding-3-small",
+    "chunking_method": "pdfplumber_sentence_spc5_ov1",
+    "retrieval_method": "hybrid",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.75,
+        "3": 0.85,
+        "5": 0.95,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.75,
+        "3": 0.28333333333333327,
+        "5": 0.19000000000000006,
+        "10": 0.10000000000000002
+      },
+      "mrr": 0.8296428571428571,
+      "map_score": 0.8296428571428571,
+      "ndcg_at_k": {
+        "1": 0.75,
+        "3": 0.8130929753571458,
+        "5": 0.8539694436225425,
+        "10": 0.8706361102892093
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 0.0003869083000608953
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_sentence_spc5_ov1__text-embedding-3-large__vector",
+    "embedding_model": "text-embedding-3-large",
+    "chunking_method": "pdfplumber_sentence_spc5_ov1",
+    "retrieval_method": "vector",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.75,
+        "3": 0.9,
+        "5": 0.9,
+        "10": 0.95
+      },
+      "precision_at_k": {
+        "1": 0.75,
+        "3": 0.29999999999999993,
+        "5": 0.18000000000000005,
+        "10": 0.09500000000000003
+      },
+      "mrr": 0.8300000000000001,
+      "map_score": 0.8300000000000001,
+      "ndcg_at_k": {
+        "1": 0.75,
+        "3": 0.8446394630357187,
+        "5": 0.8446394630357187,
+        "10": 0.859092704351613
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 5.858115036971867e-05
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_sentence_spc5_ov1__text-embedding-3-large__hybrid",
+    "embedding_model": "text-embedding-3-large",
+    "chunking_method": "pdfplumber_sentence_spc5_ov1",
+    "retrieval_method": "hybrid",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.8,
+        "3": 0.9,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.8,
+        "3": 0.29999999999999993,
+        "5": 0.20000000000000004,
+        "10": 0.10000000000000002
+      },
+      "mrr": 0.8616666666666667,
+      "map_score": 0.8616666666666667,
+      "ndcg_at_k": {
+        "1": 0.8,
+        "3": 0.8565464876785729,
+        "5": 0.895231768402027,
+        "10": 0.895231768402027
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 0.0003994061011326266
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_semantic_mt300__none__bm25",
+    "embedding_model": "none",
+    "chunking_method": "pdfplumber_semantic_mt300",
+    "retrieval_method": "bm25",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.85,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.85,
+        "3": 0.3333333333333332,
+        "5": 0.20000000000000004,
+        "10": 0.10000000000000002
+      },
+      "mrr": 0.9166666666666666,
+      "map_score": 0.9166666666666666,
+      "ndcg_at_k": {
+        "1": 0.85,
+        "3": 0.9380929753571458,
+        "5": 0.9380929753571458,
+        "10": 0.9380929753571458
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 0.000402691700583091
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_semantic_mt300__text-embedding-3-small__vector",
+    "embedding_model": "text-embedding-3-small",
+    "chunking_method": "pdfplumber_semantic_mt300",
+    "retrieval_method": "vector",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.5,
+        "3": 0.8,
+        "5": 0.9,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.5,
+        "3": 0.2666666666666666,
+        "5": 0.18000000000000005,
+        "10": 0.10000000000000002
+      },
+      "mrr": 0.6713095238095238,
+      "map_score": 0.6713095238095238,
+      "ndcg_at_k": {
+        "1": 0.5,
+        "3": 0.6761859507142916,
+        "5": 0.7170624189796883,
+        "10": 0.7515394450017561
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 8.95519999176031e-05
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_semantic_mt300__text-embedding-3-small__hybrid",
+    "embedding_model": "text-embedding-3-small",
+    "chunking_method": "pdfplumber_semantic_mt300",
+    "retrieval_method": "hybrid",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.75,
+        "3": 0.95,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.75,
+        "3": 0.31666666666666654,
+        "5": 0.20000000000000004,
+        "10": 0.10000000000000002
+      },
+      "mrr": 0.8625,
+      "map_score": 0.8625,
+      "ndcg_at_k": {
+        "1": 0.75,
+        "3": 0.8761859507142915,
+        "5": 0.8977197786179613,
+        "10": 0.8977197786179613
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 0.00017055824973795098
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_semantic_mt300__text-embedding-3-large__vector",
+    "embedding_model": "text-embedding-3-large",
+    "chunking_method": "pdfplumber_semantic_mt300",
+    "retrieval_method": "vector",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.5,
+        "3": 0.8,
+        "5": 0.95,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.5,
+        "3": 0.2666666666666666,
+        "5": 0.19000000000000006,
+        "10": 0.10000000000000002
+      },
+      "mrr": 0.6766666666666666,
+      "map_score": 0.6766666666666666,
+      "ndcg_at_k": {
+        "1": 0.5,
+        "3": 0.6761859507142916,
+        "5": 0.7385962468833579,
+        "10": 0.7564066062387591
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 8.231244974012952e-05
+    }
+  },
+  {
+    "experiment_id": "pdfplumber_semantic_mt300__text-embedding-3-large__hybrid",
+    "embedding_model": "text-embedding-3-large",
+    "chunking_method": "pdfplumber_semantic_mt300",
+    "retrieval_method": "hybrid",
+    "use_reranking": false,
+    "metrics": {
+      "recall_at_k": {
+        "1": 0.75,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "precision_at_k": {
+        "1": 0.75,
+        "3": 0.3333333333333332,
+        "5": 0.20000000000000004,
+        "10": 0.10000000000000002
+      },
+      "mrr": 0.8583333333333332,
+      "map_score": 0.8583333333333332,
+      "ndcg_at_k": {
+        "1": 0.75,
+        "3": 0.8946394630357186,
+        "5": 0.8946394630357186,
+        "10": 0.8946394630357186
+      },
+      "total_queries": 20,
+      "avg_retrieval_time": 0.00016725624991522636
+    }
+  }
+]

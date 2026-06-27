@@ -1,0 +1,619 @@
+[
+  {
+    "experiment_id": "fixed__all-MiniLM-L6-v2__dense__rr-none",
+    "config": {
+      "chunker": {
+        "name": "fixed",
+        "params": {
+          "chunk_size": 256,
+          "overlap": 0
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "dense",
+        "params": {}
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.5252808988764045,
+        "3": 0.34925093632958737,
+        "5": 0.2837078651685403,
+        "10": 0.2036516853932586
+      },
+      "recall_at_k": {
+        "1": 0.18054098128866825,
+        "3": 0.32352414237741417,
+        "5": 0.42455284718586117,
+        "10": 0.5739919554815455
+      },
+      "ndcg_at_k": {
+        "1": 0.5252808988764045,
+        "3": 0.4417883211129508,
+        "5": 0.45367900163806885,
+        "10": 0.4987941638648109
+      },
+      "mrr": 0.6544587123238808,
+      "map_score": 0.36464646214149027,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.005747077631752014
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "fixed__all-MiniLM-L6-v2__bm25__rr-none",
+    "config": {
+      "chunker": {
+        "name": "fixed",
+        "params": {
+          "chunk_size": 256,
+          "overlap": 0
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "bm25",
+        "params": {}
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.6264044943820225,
+        "3": 0.4082397003745314,
+        "5": 0.31685393258427075,
+        "10": 0.20421348314606763
+      },
+      "recall_at_k": {
+        "1": 0.23261300689836734,
+        "3": 0.4081482623823997,
+        "5": 0.4890229794806794,
+        "10": 0.5968463505723913
+      },
+      "ndcg_at_k": {
+        "1": 0.6264044943820225,
+        "3": 0.5343835774226688,
+        "5": 0.5337225718469374,
+        "10": 0.5574931006676451
+      },
+      "mrr": 0.7421247993579452,
+      "map_score": 0.4306245522005906,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.006032589505542837
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "fixed__all-MiniLM-L6-v2__hybrid__rr-none",
+    "config": {
+      "chunker": {
+        "name": "fixed",
+        "params": {
+          "chunk_size": 256,
+          "overlap": 0
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "hybrid",
+        "params": {
+          "alpha": 0.5
+        }
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.6376404494382022,
+        "3": 0.4222846441947564,
+        "5": 0.3303370786516865,
+        "10": 0.2230337078651688
+      },
+      "recall_at_k": {
+        "1": 0.23895467277820231,
+        "3": 0.4193869222867899,
+        "5": 0.5119708259538067,
+        "10": 0.6447757959159147
+      },
+      "ndcg_at_k": {
+        "1": 0.6376404494382022,
+        "3": 0.5498289219263974,
+        "5": 0.5526930955417664,
+        "10": 0.5888960221678567
+      },
+      "mrr": 0.7577001961833425,
+      "map_score": 0.4568068076807957,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.02406452478084084
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "sliding__all-MiniLM-L6-v2__dense__rr-none",
+    "config": {
+      "chunker": {
+        "name": "sliding",
+        "params": {
+          "chunk_size": 256,
+          "overlap": 64
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "dense",
+        "params": {}
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.5449438202247191,
+        "3": 0.4044943820224722,
+        "5": 0.3286516853932592,
+        "10": 0.23735955056179783
+      },
+      "recall_at_k": {
+        "1": 0.13634557910849615,
+        "3": 0.2939579999894519,
+        "5": 0.3707091485878799,
+        "10": 0.5084839186969553
+      },
+      "ndcg_at_k": {
+        "1": 0.5449438202247191,
+        "3": 0.4654714610759505,
+        "5": 0.45463075689114396,
+        "10": 0.4786468809166989
+      },
+      "mrr": 0.6705490904226857,
+      "map_score": 0.33223808008862543,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.005722656721905531
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "sliding__all-MiniLM-L6-v2__bm25__rr-none",
+    "config": {
+      "chunker": {
+        "name": "sliding",
+        "params": {
+          "chunk_size": 256,
+          "overlap": 64
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "bm25",
+        "params": {}
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.6432584269662921,
+        "3": 0.4485018726591762,
+        "5": 0.3488764044943831,
+        "10": 0.23932584269662963
+      },
+      "recall_at_k": {
+        "1": 0.18370295935241768,
+        "3": 0.34361011376043016,
+        "5": 0.4191959483928612,
+        "10": 0.5333426272749194
+      },
+      "ndcg_at_k": {
+        "1": 0.6432584269662921,
+        "3": 0.5336814214935628,
+        "5": 0.5143451699073559,
+        "10": 0.5291818616311228
+      },
+      "mrr": 0.7431692527198143,
+      "map_score": 0.38887150756935207,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.008415686575808854
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "sliding__all-MiniLM-L6-v2__hybrid__rr-none",
+    "config": {
+      "chunker": {
+        "name": "sliding",
+        "params": {
+          "chunk_size": 256,
+          "overlap": 64
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "hybrid",
+        "params": {
+          "alpha": 0.5
+        }
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.6657303370786517,
+        "3": 0.4709737827715356,
+        "5": 0.3780898876404502,
+        "10": 0.2643258426966297
+      },
+      "recall_at_k": {
+        "1": 0.18357996145523806,
+        "3": 0.3532482517593109,
+        "5": 0.44503214895555493,
+        "10": 0.580824947464893
+      },
+      "ndcg_at_k": {
+        "1": 0.6657303370786517,
+        "3": 0.5527207446125009,
+        "5": 0.5419938632374804,
+        "10": 0.5633962399326997
+      },
+      "mrr": 0.7648374799357947,
+      "map_score": 0.4140447364265979,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.03119803979508729
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "recursive__all-MiniLM-L6-v2__dense__rr-none",
+    "config": {
+      "chunker": {
+        "name": "recursive",
+        "params": {
+          "chunk_size": 512,
+          "overlap": 64
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "dense",
+        "params": {}
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.4691011235955056,
+        "3": 0.3136704119850179,
+        "5": 0.23932584269663001,
+        "10": 0.15702247191011295
+      },
+      "recall_at_k": {
+        "1": 0.20540507401462474,
+        "3": 0.3836521312644907,
+        "5": 0.47240931665088937,
+        "10": 0.5947953965510142
+      },
+      "ndcg_at_k": {
+        "1": 0.4691011235955056,
+        "3": 0.42890675520107285,
+        "5": 0.4481256181723412,
+        "10": 0.4946745798253672
+      },
+      "mrr": 0.6057528535758869,
+      "map_score": 0.3775939085660193,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.005389917615329058
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "recursive__all-MiniLM-L6-v2__bm25__rr-none",
+    "config": {
+      "chunker": {
+        "name": "recursive",
+        "params": {
+          "chunk_size": 512,
+          "overlap": 64
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "bm25",
+        "params": {}
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.6685393258426966,
+        "3": 0.41385767790262173,
+        "5": 0.316853932584271,
+        "10": 0.19831460674157345
+      },
+      "recall_at_k": {
+        "1": 0.3194944334691527,
+        "3": 0.523973209998491,
+        "5": 0.6401561063780158,
+        "10": 0.7567813584667514
+      },
+      "ndcg_at_k": {
+        "1": 0.6685393258426966,
+        "3": 0.5940235425474704,
+        "5": 0.6212265178067874,
+        "10": 0.6664410406440436
+      },
+      "mrr": 0.7645476636347424,
+      "map_score": 0.5575987056627606,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.0033874640280015904
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "recursive__all-MiniLM-L6-v2__hybrid__rr-none",
+    "config": {
+      "chunker": {
+        "name": "recursive",
+        "params": {
+          "chunk_size": 512,
+          "overlap": 64
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "hybrid",
+        "params": {
+          "alpha": 0.5
+        }
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.6292134831460674,
+        "3": 0.40730337078651685,
+        "5": 0.3140449438202259,
+        "10": 0.19662921348314644
+      },
+      "recall_at_k": {
+        "1": 0.28873935053710353,
+        "3": 0.512286924997599,
+        "5": 0.6207183500020576,
+        "10": 0.7426518706013088
+      },
+      "ndcg_at_k": {
+        "1": 0.6292134831460674,
+        "3": 0.5737325061711985,
+        "5": 0.5990477418930137,
+        "10": 0.6459784516634663
+      },
+      "mrr": 0.7449460495808812,
+      "map_score": 0.5319260081589532,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.015318802533789146
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "semantic__all-MiniLM-L6-v2__dense__rr-none",
+    "config": {
+      "chunker": {
+        "name": "semantic",
+        "params": {
+          "max_tokens": 384
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "dense",
+        "params": {}
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.47191011235955055,
+        "3": 0.3099250936329581,
+        "5": 0.241573033707866,
+        "10": 0.15168539325842742
+      },
+      "recall_at_k": {
+        "1": 0.21607923131799564,
+        "3": 0.41279873372570014,
+        "5": 0.5160770019618334,
+        "10": 0.6210061084358837
+      },
+      "ndcg_at_k": {
+        "1": 0.47191011235955055,
+        "3": 0.4451195255215918,
+        "5": 0.4697141734646587,
+        "10": 0.5075391231114923
+      },
+      "mrr": 0.6033172819689675,
+      "map_score": 0.39717089129659344,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.0055540827105166465
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "semantic__all-MiniLM-L6-v2__bm25__rr-none",
+    "config": {
+      "chunker": {
+        "name": "semantic",
+        "params": {
+          "max_tokens": 384
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "bm25",
+        "params": {}
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.6769662921348315,
+        "3": 0.3941947565543064,
+        "5": 0.2848314606741585,
+        "10": 0.17949438202247248
+      },
+      "recall_at_k": {
+        "1": 0.3491450419118959,
+        "3": 0.5436162386302835,
+        "5": 0.6289136347422863,
+        "10": 0.7326188246834314
+      },
+      "ndcg_at_k": {
+        "1": 0.6769662921348315,
+        "3": 0.6067196910109378,
+        "5": 0.617538604945736,
+        "10": 0.6575668502546417
+      },
+      "mrr": 0.7687945871232391,
+      "map_score": 0.5549235569696042,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.0031140633256266513
+    },
+    "judge_average": null,
+    "num_queries": 356
+  },
+  {
+    "experiment_id": "semantic__all-MiniLM-L6-v2__hybrid__rr-none",
+    "config": {
+      "chunker": {
+        "name": "semantic",
+        "params": {
+          "max_tokens": 384
+        }
+      },
+      "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+      "retriever": {
+        "name": "hybrid",
+        "params": {
+          "alpha": 0.5
+        }
+      },
+      "reranker": null,
+      "top_k": 10,
+      "k_values": [
+        1,
+        3,
+        5,
+        10
+      ]
+    },
+    "metrics": {
+      "precision_at_k": {
+        "1": 0.6320224719101124,
+        "3": 0.39138576779026163,
+        "5": 0.2893258426966303,
+        "10": 0.18314606741573078
+      },
+      "recall_at_k": {
+        "1": 0.3238139825218478,
+        "3": 0.5287876761191369,
+        "5": 0.6212513376136971,
+        "10": 0.7465166309969679
+      },
+      "ndcg_at_k": {
+        "1": 0.6320224719101124,
+        "3": 0.5840806812176537,
+        "5": 0.5985947183710146,
+        "10": 0.6460071514800282
+      },
+      "mrr": 0.7386403156768327,
+      "map_score": 0.5381623487930334,
+      "total_queries": 356,
+      "avg_retrieval_time": 0.015299982309014094
+    },
+    "judge_average": null,
+    "num_queries": 356
+  }
+]
