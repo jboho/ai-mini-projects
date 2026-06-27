@@ -1,0 +1,22 @@
+{
+  "count": 1469,
+  "compatible": 692,
+  "by_category": {
+    "dealbreakers": 311,
+    "interests": 311,
+    "values": 336,
+    "lifestyle": 348,
+    "multi": 163
+  },
+  "by_pair_type": {
+    "dealbreaker_conflict": 143,
+    "dealbreaker_aligned": 168,
+    "interests_conflict": 151,
+    "values_conflict": 179,
+    "lifestyle_conflict": 180,
+    "values_aligned": 157,
+    "multi_preference": 163,
+    "interests_aligned": 160,
+    "lifestyle_aligned": 168
+  }
+}

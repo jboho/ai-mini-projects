@@ -1,8 +1,3 @@
-# Regenerable dataset (scripts/generate_data.py) and large model artifacts
-data/*.jsonl
-data/*_metadata.json
-models/finetuned-minilm/
-
 # Python
 __pycache__/
 *.pyc
