@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is the objective of the paper \"Rendering Novel Views of MRI Using 3D Gaussian Splatting\"?",
+    "relevant_chunk_ids": [
+      "2a05a2ce-59b4-4e05-a1d4-13aecbf54a74"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 1
+    }
+  },
+  {
+    "question": "What does it mean for voxels in diagnostic MRI to be anisotropic?",
+    "relevant_chunk_ids": [
+      "2944c346-095d-4ad1-ba6c-23aa7943fcf6"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "How does the spacing between input images used for MRI reconstructions compare to that used by Eid et al. in UltraGauss?",
+    "relevant_chunk_ids": [
+      "94b9f313-02d3-4d6d-8cd4-a1b15719c541"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 2
+    }
+  },
+  {
+    "question": "What was Gaussian Splatting originally developed for?",
+    "relevant_chunk_ids": [
+      "5fa796da-2ad6-453b-baff-16b5319d568f"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 3
+    }
+  },
+  {
+    "question": "Which lumbar disc is the site of 75% of all neural foraminal stenosis?",
+    "relevant_chunk_ids": [
+      "76d1cfbe-c213-4694-8b83-73c09960af6a"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 4
+    }
+  },
+  {
+    "question": "What is the objective of applying 3D Gaussian Splatting to reconstruct MRI from sparse source volumes?",
+    "relevant_chunk_ids": [
+      "9b52fc96-8e5b-4c2d-a47b-da2281e5885a"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 5
+    }
+  },
+  {
+    "question": "How do the authors initialize the means of the Gaussians to ensure they have the highest impact?",
+    "relevant_chunk_ids": [
+      "f0d5e34b-b5b0-4d2e-8bda-feea2fcdce9e"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 6
+    }
+  },
+  {
+    "question": "What methods are used to learn and optimize the Gaussians' parameters to form a complete 3D reconstruction?",
+    "relevant_chunk_ids": [
+      "3269f515-0574-4d01-877b-c930402e2c92"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 7
+    }
+  },
+  {
+    "question": "What are the starting and ending learning rates for the Gaussian parameters \u00b5, \u03a3, c, and \u03b1 when using exponentially decaying learning rate schedulers?",
+    "relevant_chunk_ids": [
+      "7a2a6a9c-fa45-4d67-bfd7-b24d593961ef"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 8
+    }
+  },
+  {
+    "question": "What method does VoxelInterpolation (VI) use for resampling?",
+    "relevant_chunk_ids": [
+      "32cc5601-cb78-4d95-98d6-c55aee6f7edd"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 9
+    }
+  },
+  {
+    "question": "How are the 2D slice features aggregated and processed in the grading model based on the network of Park et al.?",
+    "relevant_chunk_ids": [
+      "8917062a-e156-4fe6-ae48-72130be7ed82"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 10
+    }
+  },
+  {
+    "question": "What is the purpose of applying an anisotropic Gaussian weight mask focused on the region of interest?",
+    "relevant_chunk_ids": [
+      "67de7820-b172-474d-bce3-ff01ddf2e355"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 11
+    }
+  },
+  {
+    "question": "What do Figure 10A, 10B, and 10C represent in the comparison of resampled images?",
+    "relevant_chunk_ids": [
+      "f45b90ce-9415-4766-acbc-ea6bdeb302d7"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 12
+    }
+  },
+  {
+    "question": "How is the macro average AUROC computed for the conditions in the test sets?",
+    "relevant_chunk_ids": [
+      "ad454342-8093-47a7-aff4-1acfe3dfe9eb"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 14
+    }
+  },
+  {
+    "question": "Which organizations and grants provided funding for this research?",
+    "relevant_chunk_ids": [
+      "8c5a94a8-ae61-44aa-aba7-8c5a094b9777"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 15
+    }
+  },
+  {
+    "question": "Which generative AI image model was used to generate the image accessed on May 27, 2026?",
+    "relevant_chunk_ids": [
+      "9ccff02c-ff14-4926-b7bc-7b3044f6c61e"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 16
+    }
+  },
+  {
+    "question": "Who are the authors of the work regarding rendering novel views of MRI?",
+    "relevant_chunk_ids": [
+      "8ba78bf7-1333-4fc9-a549-e3b183ee1ccb"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 16
+    }
+  },
+  {
+    "question": "When was the Miami Neuroscience Center's information on spinal stenosis symptoms, diagnosis, and treatment last modified?",
+    "relevant_chunk_ids": [
+      "1edbc2cb-d46e-49ce-bd2f-bb326df7be9e"
+    ],
+    "metadata": {
+      "question_type": "analytical",
+      "source_page": 17
+    }
+  },
+  {
+    "question": "Who are the authors of the 2024 article titled 'Degenerative disease of the spine: How to relate clinical symptoms to radiological findings' published in Advances in Clinical and Experimental Medicine?",
+    "relevant_chunk_ids": [
+      "dd7f56cc-ae3b-4666-a987-d9232e46a3c5"
+    ],
+    "metadata": {
+      "question_type": "factual",
+      "source_page": 17
+    }
+  },
+  {
+    "question": "What is the diagnostic value of spinal ultrasound compared to MRI for identifying spinal anomalies in pediatric patients?",
+    "relevant_chunk_ids": [
+      "48a91de0-29df-4e76-a3a3-5ffdc256dbd4"
+    ],
+    "metadata": {
+      "question_type": "conceptual",
+      "source_page": 18
+    }
+  }
+]

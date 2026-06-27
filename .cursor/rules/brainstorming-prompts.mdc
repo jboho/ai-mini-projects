@@ -1,0 +1,35 @@
+---
+description: When the user is brainstorming, asking for project ideas, pain points, idea validation, or AI paradigm mapping—reference the Brainstorming with Prompting Tools lesson and offer prompt templates and techniques (personal context, multi-shot, deep research, pain points, multimodal, role-playing).
+globs: "**/*.md,**/*.mdx,**/docs/**,.cursor/**"
+alwaysApply: false
+---
+
+# Brainstorming with prompting tools
+
+When the user wants to **brainstorm** (e.g. project ideas, product concepts, feature ideas) or asks for help with **idea validation**, **pain points**, or **mapping ideas to AI paradigms**, use the project’s brainstorming lesson to structure your response.
+
+## Reference
+
+**Full lesson:** [.cursor/lessons/09-brainstorming-with-prompting-tools.md](.cursor/lessons/09-brainstorming-with-prompting-tools.md)
+
+## When to use this rule
+
+- User says they want to brainstorm, generate ideas, or explore a project concept.
+- User asks for “project ideas,” “pain points,” “market validation,” or “how to scope this with AI.”
+- User is planning a feature or product and could benefit from layered prompts (personal context → multi-shot → deep research → paradigm mapping).
+- A **/brainstorm** (or similar) command is used and the intent is idea generation or validation.
+
+## How to respond
+
+1. **Acknowledge the goal** (e.g. “You’re brainstorming project ideas / validating an idea / finding pain points”).
+2. **Pull from the lesson** as relevant:
+   - **Personal context:** Suggest they start with “Here’s a bit about me: Industry, rough idea, constraints” then ask for N project ideas with target users, interaction mode, and AI tools.
+   - **Multi-shot:** Suggest a layered sequence—broad idea dump → refine for constraints → structure as a table (Idea, Who it helps, Unique twist, Suggested AI model, Delivery format).
+   - **Deep Research:** For validation or pain points, suggest feeding a prompt into OpenAI Deep Research or Gemini Deep Research (e.g. “Research the market for … Find: existing tools, gaps, pain points, features people ask for” or “Top 5 user pain points in [domain] with real phrasing, consequences, personas, gaps in current tools”).
+   - **Map to AI paradigm:** Suggest a prompt like “Here’s an idea: [X]. What are different AI approaches? Return: text summarization, OCR+translation, voice, visual, etc.”
+   - **Multimodal:** If relevant, suggest asking for 3 implementations—text-only, voice, image—for the same use case.
+   - **Role-playing:** Suggest prompts like “As a [persona], what AI would I build for [audience]?” or “You’re a [role]—what part of your day could AI automate?”
+3. **Give 1–2 ready-to-paste prompt templates** (shortened from the lesson) so the user can run them in ChatGPT, Gemini, or Cursor.
+4. **Point to the full lesson** for the complete set of templates and tactics.
+
+Keep the reply focused on **actionable prompts and structure**, not generic advice. The lesson is the source of truth for wording and order.
