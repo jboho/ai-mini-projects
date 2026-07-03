@@ -1,0 +1,12 @@
+[
+  {"item_id": "R1", "title": "Improve app load time and reduce crashes", "description": "Optimize startup performance and fix crash-on-launch issues for low-end devices.", "product_area": "performance", "status": "in_progress"},
+  {"item_id": "R2", "title": "Redesign checkout flow for mobile users", "description": "Simplify the mobile checkout with fewer steps and clearer buttons.", "product_area": "usability", "status": "planned"},
+  {"item_id": "R3", "title": "Expand return and refund policy transparency", "description": "Make return windows and refund timelines clear at purchase time.", "product_area": "customer_support", "status": "planned"},
+  {"item_id": "R4", "title": "Add real-time order tracking notifications", "description": "Push notifications for shipment, delivery, and delays.", "product_area": "features", "status": "in_progress"},
+  {"item_id": "R5", "title": "Reduce subscription pricing tiers confusion", "description": "Clarify what each pricing plan includes and remove hidden fees.", "product_area": "pricing", "status": "planned"},
+  {"item_id": "R6", "title": "Improve in-app search relevance", "description": "Better ranking and typo tolerance in product search.", "product_area": "features", "status": "backlog"},
+  {"item_id": "R7", "title": "Add live chat customer support", "description": "Offer real-time agent chat in addition to email tickets.", "product_area": "customer_support", "status": "backlog"},
+  {"item_id": "R8", "title": "Fix sync reliability across devices", "description": "Ensure cart and account state sync reliably between phone and web.", "product_area": "reliability", "status": "planned"},
+  {"item_id": "R9", "title": "Accessibility improvements for screen readers", "description": "Add proper labels and focus order for assistive technology.", "product_area": "usability", "status": "backlog"},
+  {"item_id": "R10", "title": "Dark mode and theme customization", "description": "Add a dark theme and user-selectable accent colors.", "product_area": "features", "status": "backlog"}
+]

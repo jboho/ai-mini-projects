@@ -1,0 +1,13 @@
+# Secrets
+.env
+
+# Pipeline output + caches (regenerable)
+data/*
+!data/.gitkeep
+visuals/*
+!visuals/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
