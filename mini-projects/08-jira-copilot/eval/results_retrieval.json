@@ -1,0 +1,15 @@
+{
+  "embedder": "OpenAIEmbedder",
+  "n_queries": 16,
+  "semantic": {
+    "recall@5": 1.0,
+    "precision@5": 0.2,
+    "mrr": 1.0
+  },
+  "hybrid": {
+    "recall@5": 1.0,
+    "precision@5": 0.2,
+    "mrr": 1.0
+  },
+  "hybrid_recall_improvement_pct": 0.0
+}

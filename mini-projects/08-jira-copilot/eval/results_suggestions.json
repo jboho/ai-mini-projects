@@ -1,0 +1,11 @@
+{
+  "n_issues": 6,
+  "estimate_mae": 1.917,
+  "priority_agreement": 0.5,
+  "component_accuracy": 0.0,
+  "component_evaluated": 6,
+  "assignee_accuracy": 0.0,
+  "assignee_evaluated": 6,
+  "summary_judge_mean": 5.0,
+  "summary_judged": 6
+}

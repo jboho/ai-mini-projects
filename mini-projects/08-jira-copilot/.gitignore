@@ -1,0 +1,11 @@
+# Secrets
+.env
+
+# Data: SQLite DB + ChromaDB persist dir (regenerable)
+data/*
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
