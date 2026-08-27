@@ -1,0 +1,3 @@
+# Gitignored files copied into new git worktrees so each mini-project runs immediately.
+**/.env
+.claude/settings.local.json
