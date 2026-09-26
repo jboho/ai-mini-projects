@@ -10,11 +10,10 @@ __pycache__/
 .env
 .env.local
 
-# .cursor: only commands/ and rules/ tracked
-.cursor/docs/
-.cursor/lessons/
-.cursor/plans/
-.cursor/preflight.json
-.cursor/notes/
-.cursor/memory-bank/
-.cursor/summaries/
+# .ai: local only. Public repo, and these course notes were never published.
+.ai/docs/
+.ai/lessons/
+.ai/plans/
+.ai/notes/
+.ai/memory/
+.ai/handoffs/

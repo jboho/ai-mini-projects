@@ -17,7 +17,7 @@ Build a modular RAG system over arXiv PDF papers using the Vectara Open RAG Benc
 
 - **Separate project** from `mini-projects/03-rag-evaluation-pipeline/` (which targets single-PDF synthetic QA with OpenAI embeddings)
 - **Reuses patterns** from `mini-projects/01-synthetic-data-pipeline/pipeline/client.py` (env loading, client factory) and `models.py` (Pydantic v2 schemas)
-- **Follows** the 6-step RAG debugging/eval process from `.cursor/lessons/13-ai-debugging-eval-centric-rag.md`
+- **Follows** the 6-step RAG debugging/eval process from `.ai/lessons/13-ai-debugging-eval-centric-rag.md` (local only)
 
 ## Project Structure
 
